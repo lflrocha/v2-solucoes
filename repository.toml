@@ -1,0 +1,37 @@
+[repository]
+name = "v2-solucoes"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "v2.solucoes"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+base_package = "Products.CMFPlone"
+publish = false
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "volto-v2-solucoes"
+path = "frontend/packages/volto-v2-solucoes"
+changelog = "frontend/packages/volto-v2-solucoes/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-v2-solucoes/towncrier.toml"
+base_package = "@plone/volto"
+publish = false
+
+[cookieplone]
+template = "project"
+template_version = "5ed86dcc44cb6c1520bac14d66e039c6e2e2a246"
+generated_date = "2025-12-03 15:02:08"
