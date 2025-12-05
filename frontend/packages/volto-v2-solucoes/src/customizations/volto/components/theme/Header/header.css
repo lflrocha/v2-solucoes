@@ -1,0 +1,81 @@
+/* ---------------- BASE ---------------- */
+.v2-header-wrapper {
+  width: 100%;
+  color: var(--text-light);
+  position: relative;
+}
+
+.v2-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------------- HEADER ESTÁTICO (HERO) ---------------- */
+.v2-header-static {
+  position: relative;
+  z-index: 899;
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 21, 20, 0.4) 0%,
+    rgba(13, 21, 20, 0) 100%
+  );
+}
+
+/* ---------------- HEADER STICKY / COMPACTO ---------------- */
+.v2-header-sticky {
+  position: fixed;
+  top: -120px; /* começa escondido acima da viewport */
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  background: var(--header-background-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition:
+    top 0.75s ease,
+    background 0.7s ease,
+    box-shadow 0.7s ease;
+}
+
+/* Quando rolar além do limite → entra de cima */
+.v2-header-sticky.is-visible {
+  top: 0;
+}
+
+/* Versão compacta da logo no header sticky */
+.v2-header-sticky .v2-logo img {
+  max-width: 241px;
+  height: auto;
+}
+
+/* Ajustes dos botões de ação no header sticky */
+.v2-header-sticky .btn-v2-link {
+  height: 60px;
+  border: 1px solid rgba(244, 244, 244, 0.15);
+  border-right: 0;
+  background: rgba(232, 232, 232, 0.15);
+}
+
+.v2-header-sticky .btn-v2-link:hover {
+  background: var(--primary);
+  color: var(--text-light);
+}
+
+.v2-header-sticky .btn-v2-link:active {
+  background: var(--primary-dark);
+  color: var(--text-light-dark);
+}
+
+.v2-header-sticky .btn-v2-link:hover .content-btn-icon path {
+  stroke: var(--text-light);
+}
+
+.v2-header-sticky .btn-v2-link:active .content-btn-icon path {
+  stroke: var(--text-light-dark);
+}
+
+/* Se quiser mexer nas bordas dos links principais no sticky */
+.v2-header-sticky .v2-menu-main .v2-link:last-child {
+  border-right: 0;
+}
+

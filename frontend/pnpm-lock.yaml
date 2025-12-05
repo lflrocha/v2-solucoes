@@ -445,7 +445,7 @@ importers:
         version: 1.0.10
       wait-on:
         specifier: ^7.2.0
-        version: 7.2.0
+        version: 7.2.0(debug@4.3.2)
     devDependencies:
       release-it:
         specifier: ^16.1.3
@@ -1146,7 +1146,7 @@ importers:
     dependencies:
       '@plone/scripts':
         specifier: '*'
-        version: 3.10.3
+        version: 3.10.3(debug@4.3.2)
 
   core/packages/volto-slate:
     dependencies:
@@ -1263,16 +1263,37 @@ importers:
 
   packages/volto-v2-solucoes:
     dependencies:
+      '@eeacms/volto-timeline-block':
+        specifier: '*'
+        version: 2.0.1
+      '@kitconcept/volto-light-theme':
+        specifier: 7.0.0-alpha.25
+        version: 7.0.0-alpha.25(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-logos-block@3.0.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@kitconcept/volto-social-blocks':
+        specifier: 1.0.0-alpha.8
+        version: 1.0.0-alpha.8(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)
+      '@mbarde/volto-image-crop-widget':
+        specifier: 0.5.1
+        version: 0.5.1(react@18.2.0)
+      '@plone-collective/volto-authomatic':
+        specifier: 3.0.0-alpha.4
+        version: 3.0.0-alpha.4(@plone/components@core+packages+components)(@plone/registry@core+packages+registry)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(semantic-ui-react@2.1.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+      '@plone/components':
+        specifier: workspace:*
+        version: link:../../core/packages/components
+      '@plone/registry':
+        specifier: workspace:*
+        version: link:../../core/packages/registry
       react:
         specifier: ^18.2.0
         version: 18.2.0
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      volto-form-block:
+        specifier: '*'
+        version: 3.15.0(@plone/volto@18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(volto-subblocks@2.1.0(@plone/volto@18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(react@18.2.0))
     devDependencies:
-      '@plone/registry':
-        specifier: workspace:*
-        version: link:../../core/packages/registry
       '@plone/scripts':
         specifier: workspace:*
         version: link:../../core/packages/scripts
@@ -2148,6 +2169,9 @@ packages:
   '@cypress/xvfb@1.2.4':
     resolution: {integrity: sha512-skbBzPggOVYCbnGgV+0dmBdW/s77ZkAOXIC1knS8NagwDjBrNC1LuXtQJeiN6l+m7lzmHtaoUw/ctJKdqkG57Q==}
 
+  '@datapunt/matomo-tracker-js@0.5.1':
+    resolution: {integrity: sha512-9/MW9vt/BA5Db7tO6LqCeQKtuvBNjyq51faF3AzUmPMlYsJCnASIxcut3VqJKiribhUoey7aYbPIYuj9x4DLPA==}
+
   '@discoveryjs/json-ext@0.5.7':
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
@@ -2176,6 +2200,15 @@ packages:
 
   '@dual-bundle/import-meta-resolve@4.2.1':
     resolution: {integrity: sha512-id+7YRUgoUX6CgV0DtuhirQWodeeA7Lf4i2x71JS/vtA5pRb/hIGWlw+G6MeXvsM+MXrz0VAydTGElX1rAfgPg==}
+
+  '@eeacms/volto-accordion-block@10.4.6':
+    resolution: {integrity: sha512-IZfAg8By1dZA2SSr4MNu2gFCs0F67/ZMAlpdqkevSMvkBREjny97cEFtMjkhGyOc3MBTp1vd0TtqvL3cN1GehQ==}
+
+  '@eeacms/volto-timeline-block@2.0.1':
+    resolution: {integrity: sha512-DnpXj+KSK/AiLfKLyafeLQvfp6aFuDSfe/49wNt1WTUllHSYW7ftiPD3nmHIUaOKOqCB2x+FmdGbS6abKsrT1w==}
+
+  '@eeacms/volto-widget-theme-picker@2.0.0':
+    resolution: {integrity: sha512-f3+B7ATw0EoehO2rqU9NZoJABBtFUGy+zDGynm7MCSsfWcy6yafmCsOw2MKssBFXkgBicfpLLdE8ESEEITy6aA==}
 
   '@emnapi/core@1.7.1':
     resolution: {integrity: sha512-o1uhUASyo921r2XtHYOHy7gdkGLge8ghBEQHMWmyJFoXlpU58kIrhhN3w26lpQb6dspetweapMn2CSNwQ8I4wg==}
@@ -2752,6 +2785,12 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
+  '@hcaptcha/react-hcaptcha@0.3.10':
+    resolution: {integrity: sha512-lpxQGKFFPf5fzieY6Z1Hik5zGvXu6GGUnZdmjeGWB+OjzY2ucTPxfN3biPCfy18Od6YKdkkSUZUyteVLdUbigA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+      react-dom: '>= 16.3.0'
+
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
     engines: {node: '>=10.10.0'}
@@ -3045,6 +3084,134 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
+  '@kitconcept/volto-banner-block@1.1.0':
+    resolution: {integrity: sha512-cNJXYWPI15Sj9gCiCdxL537HpVQIR5544lXT1Ph6qZRoLymqpL/F3l+6wxe7Ub7YRJeB6t2IkEqaOMguZpbYVg==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-bm3-compat@1.0.0-alpha.1':
+    resolution: {integrity: sha512-eKEtR1WBvLh9gf9JzCB7THgcYxyJPiw7QVXZ2Bdo6NOYSh05PPMvpN+lUBYj3ottk7oAt9Mvln4FCyfza4abUw==}
+    peerDependencies:
+      classnames: ^2.2.6
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-button-block@4.0.0':
+    resolution: {integrity: sha512-IYnL1NmNU7EAn8Aiy9emliwImnzxTYovc8MTQ5piDp8WCq1QjemMirLWCsmsRIPzlI/z3qqtQcf/lZJIfxmbXg==}
+    peerDependencies:
+      classnames: ^2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: ^3.12.1
+
+  '@kitconcept/volto-carousel-block@2.0.0':
+    resolution: {integrity: sha512-J+2ArHeMRGEgfk5ZLwEDVHEQT5V1t+WBBv5M5hrQnav0yfRFtCw5l49aBR4qUSFZQOCcuUTTjj8Zlt2e2SA0fw==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-dsgvo-banner@2.5.2':
+    resolution: {integrity: sha512-QyvhWV/gHLneRDGSEr66ZpKLiyahZNN1OTm/ym624kIGxMz4VQs9w0bUL6Gk7kKKNpZEuZ1HHJrYTscYU3sYpA==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-heading-block@2.5.0':
+    resolution: {integrity: sha512-ny06aMJaYxHCwtb06w2YXKy92XlaSjgbR/gkxpRJaFAxlgzbgytTs7csPTKvge0SyTVXd21QBeDHYc21Yr1n0g==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-highlight-block@4.5.1':
+    resolution: {integrity: sha512-xDVGdUTFyCuR7uHb9/eyZ94NbreHABU8zwsZapiGuquKQDP61rEkCcNdU66O0fw7dpj5x1r9YeXoVFWmfX0UaA==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  '@kitconcept/volto-introduction-block@1.1.0':
+    resolution: {integrity: sha512-6TUwX+wS5wRIjvRew2oPl39L6uU8izfel4dV7t87bbsmbimPItqMel8hi9i7v6zwSwLj7PMjOgNvZijubcLFFg==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-light-theme@7.0.0-alpha.25':
+    resolution: {integrity: sha512-wvLoFWM5xls/uqHAgpmkN3MNtjo2cQN+e5Gr+c0gkiE8iyIG0VPF9rM/Q0L2CwycmAqW1XzGH40/hV0DcxAt1g==}
+    peerDependencies:
+      '@eeacms/volto-accordion-block': ^10.4.6
+      '@kitconcept/volto-banner-block': ^1.1.0
+      '@kitconcept/volto-bm3-compat': ^1.0.0-alpha.1
+      '@kitconcept/volto-button-block': ^4.0.0-alpha.0
+      '@kitconcept/volto-carousel-block': ^2.0.0-alpha.3
+      '@kitconcept/volto-dsgvo-banner': ^2.5.1
+      '@kitconcept/volto-heading-block': ^2.5.0
+      '@kitconcept/volto-highlight-block': ^4.4.0
+      '@kitconcept/volto-introduction-block': ^1.1.0
+      '@kitconcept/volto-logos-block': ^3.0.0-alpha.1
+      '@kitconcept/volto-separator-block': ^4.2.1
+      '@kitconcept/volto-slider-block': ^6.4.0
+      '@plonegovbr/volto-social-media': ^2.0.0-alpha.6
+      classnames: ^2.2.6
+      lodash: 4.17.21
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: ^3.12.1
+      react-redux: ^8.1.2
+      react-router-dom: ^5.2.0
+
+  '@kitconcept/volto-light-theme@7.6.0':
+    resolution: {integrity: sha512-z3Sayz8LTjuyH1t1rnFjj8NHlhiYgUH3tTLMpYJl90QoBychL3q9Ipnma0jESxZyxN+H3J584UJC1UVB2ccP0Q==}
+    peerDependencies:
+      '@eeacms/volto-accordion-block': ^10.4.6
+      '@kitconcept/volto-banner-block': ^1.1.0
+      '@kitconcept/volto-bm3-compat': ^1.0.0-alpha.1
+      '@kitconcept/volto-button-block': ^4.0.0
+      '@kitconcept/volto-carousel-block': ^2.0.0-alpha.3
+      '@kitconcept/volto-dsgvo-banner': ^2.5.1
+      '@kitconcept/volto-heading-block': ^2.5.0
+      '@kitconcept/volto-highlight-block': ^4.5.0
+      '@kitconcept/volto-introduction-block': ^1.1.0
+      '@kitconcept/volto-logos-block': ^3.0.0-alpha.2
+      '@kitconcept/volto-separator-block': ^4.2.1
+      '@kitconcept/volto-slider-block': ^6.4.1
+      '@plonegovbr/volto-social-media': ^2.0.0-alpha.10
+      classnames: ^2.2.6
+      lodash: 4.17.21
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: ^3.12.1
+      react-redux: ^8.1.2
+      react-router-dom: ^5.2.0
+
+  '@kitconcept/volto-logos-block@3.0.0':
+    resolution: {integrity: sha512-6WNHiJE6sfIO1MaC7fYrpBZZQw3HenlwnsmEzdkbAGOY0bMZAxXpT633bGiVSBCvfE8hF3yC0Em9nKPo8LtnBQ==}
+    peerDependencies:
+      classnames: 2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: ^3.12.1
+
+  '@kitconcept/volto-separator-block@4.2.1':
+    resolution: {integrity: sha512-FId9W5nL2JFblfD2bMbqSPZ+aSBzDUsjVHkH25TRxI0JAYc5kw2j5iAeH4Q29+WfwkDBJmBC72urCRV+m9KqYw==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: ^3.12.1
+
+  '@kitconcept/volto-slider-block@6.4.1':
+    resolution: {integrity: sha512-hM+WREJmz5qmxHBZOOg/ffFG/BD4lvtbNqiDADVyze48SUbw+ALdUtYdNeap0Bjx4o1DOIR/mImSojsoLqAcBA==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
+  '@kitconcept/volto-social-blocks@1.0.0-alpha.8':
+    resolution: {integrity: sha512-dJqLcqtqsN3Bk3fCQAfJXzxL3UD0e0WU/UzlZBw/w8hwTC6y2WXN/Zg4px8qvGFFL3c79yyaUkGQjU52vt4jYQ==}
+    peerDependencies:
+      classnames: 2.2.6
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: 3.8.0
+
   '@kwsites/file-exists@1.1.1':
     resolution: {integrity: sha512-m9/5YGR18lIwxSFDwfE3oA7bWuq9kdau6ugN4H2rJeyhFQZcG9AgSHkQtSD15a8WvTgfz9aikZMrKPHvbpqFiw==}
 
@@ -3082,6 +3249,9 @@ packages:
     engines: {node: '>=8'}
     peerDependencies:
       webpack: '>=4.6.0'
+
+  '@mbarde/volto-image-crop-widget@0.5.1':
+    resolution: {integrity: sha512-Dv7EYr1gj9Eahq6vtFAlhllk9JNK8yI9kHkvxkgauK/VBph3t+6reJC8hi1vchfbOtI9tbDfA1R/A4Aul0gVVg==}
 
   '@mdx-js/react@3.1.1':
     resolution: {integrity: sha512-f++rKLQgUVYDAtECQ6fn/is15GkEH9+nZPM3MS0RcxVqoTfawHvDlSCH7JbMhAM6uJ32v3eXLvLmLvjGu7PTQw==}
@@ -3509,9 +3679,62 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
+  '@plone-collective/volto-authomatic@3.0.0-alpha.4':
+    resolution: {integrity: sha512-i3KjIHAFOqdGIy515/eejk2Wkgy864l/xYXUiEr1H/OAEYpHfoop0O6oUBAuxzxjSDnQUXW79iVUCuE50zMxqA==}
+    peerDependencies:
+      '@plone/components': 3.0.2
+      '@plone/registry': 2.5.2
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-intl: '*'
+      semantic-ui-react: '*'
+
+  '@plone/components@1.7.0':
+    resolution: {integrity: sha512-T/GOFwKEhxrjp2S0sqRgTz7ZN8TcxvvPKKq7af2vARpEGWW8HszCX9CTDo0t3decSal0NqWqHiFbY2q6xbvrNA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
+  '@plone/components@3.0.2':
+    resolution: {integrity: sha512-BLxq4HMcmGux+CD6nOyl0YOqpTiB4yz/h4y/dcGSH3EwhxB3vaEq/Vcoss4qlzHJFfguemNPehJPGP8tq/Z6ww==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
+  '@plone/registry@2.6.0':
+    resolution: {integrity: sha512-2s7d8i5GTywzuYcglqljFbP2uTQaHv5Ln0uHcdq6GypqKBfc2kztckDF9COArp9I9F0dodISviNvDBhKcs/36A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
   '@plone/scripts@3.10.3':
     resolution: {integrity: sha512-ehklcOoczX1Ji06qA5Y6MZgz87YgR2GeW5zSaY4CzSG3YG7fF6pTnFa7MVVHAOcY8isSN2s97T6jB6PD75pQng==}
     hasBin: true
+
+  '@plone/volto-slate@18.8.0':
+    resolution: {integrity: sha512-7RxWZD59salBnnOJ4LtxTaFs3Ogv0fH6nloUvrptXcM0UevcvOAXhZFvU2CNWtsNTYGZaiUCA/lKKozAe2gZRg==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
+  '@plone/volto@18.30.0':
+    resolution: {integrity: sha512-109vOy1c9kD2hovG0Ff2Mi9oD+n/WkmOZ7hkNwIyBWDimq+3plEZ6Ctsg7hrcQHKTRCx8SCQBIPY03OMyWIqnQ==}
+    engines: {node: ^20 || ^22}
+
+  '@plonegovbr/volto-social-media@2.0.0':
+    resolution: {integrity: sha512-sfpst/EQJaxIE0YH3HYT4sfnqIVTJNwtWModMqJwqJTLmyc3C/gAdLEmsWH6aExrpnJ/ne3Vutpa0dYJU36KaQ==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
 
   '@pmmmwh/react-refresh-webpack-plugin@0.5.17':
     resolution: {integrity: sha512-tXDyE1/jzFsHXjhRZQ3hMl0IVhYe5qula43LDWIhVfjp9G/nT5OQY5AORVOrkEGAUltBJOfOWeETbmhm6kHhuQ==}
@@ -4633,6 +4856,17 @@ packages:
     peerDependencies:
       react: ^18 || ^19
 
+  '@tanstack/react-table@8.21.2':
+    resolution: {integrity: sha512-11tNlEDTdIhMJba2RBH+ecJ9l1zgS2kjmexDPAraulc8jeNA4xocSNeyzextT0XJyASil4XsCYlJmf5jEWAtYg==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+
+  '@tanstack/table-core@8.21.2':
+    resolution: {integrity: sha512-uvXk/U4cBiFMxt+p9/G7yUWI/UbHYbyghLCjlpWZ3mLeIZiUBSKcUnw9UnKkdRz7Z/N4UBuFLWQdJCjUe7HjvA==}
+    engines: {node: '>=12'}
+
   '@testing-library/cypress@10.0.1':
     resolution: {integrity: sha512-e8uswjTZIBhaIXjzEcrQQ8nHRWHgZH7XBxKuIWxZ/T7FxfWhCR48nFhUX5nfPizjVOKSThEfOSv67jquc1ASkw==}
     engines: {node: '>=12', npm: '>=6'}
@@ -5034,6 +5268,9 @@ packages:
 
   '@types/yauzl@2.10.3':
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
+
+  '@types/youtube-player@5.5.11':
+    resolution: {integrity: sha512-pM41CDBqJqBmTeJWnF7NOGz82IQoYOhqzMYXv5vKCXBqGiYSLldxMtpCk6KAEtADTy49S45AriYaCaZyeUX38Q==}
 
   '@typescript-eslint/eslint-plugin@5.62.0':
     resolution: {integrity: sha512-TiZzBSJja/LbhNPvk6yc0JrX9XqhQ0hdh6M2svYfsHGejaKFIAGd9MQ+ERIMzLGlN/kZoYIgdxFV0PuljTKXag==}
@@ -7157,6 +7394,10 @@ packages:
     resolution: {integrity: sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==}
     engines: {node: '>=0.10.0'}
 
+  deepmerge@4.2.2:
+    resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
+    engines: {node: '>=0.10.0'}
+
   deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
     engines: {node: '>=0.10.0'}
@@ -7446,6 +7687,42 @@ packages:
 
   electron-to-chromium@1.5.263:
     resolution: {integrity: sha512-DrqJ11Knd+lo+dv+lltvfMDLU27g14LMdH2b0O3Pio4uk0x+z7OR+JrmyacTPN2M8w3BrZ7/RTwG3R9B7irPlg==}
+
+  embla-carousel-autoplay@8.5.2:
+    resolution: {integrity: sha512-27emJ0px3q/c0kCHCjwRrEbYcyYUPfGO3g5IBWF1i7714TTzE6L9P81V6PHLoSMAKJ1aHoT2e7YFOsuFKCbyag==}
+    peerDependencies:
+      embla-carousel: 8.5.2
+
+  embla-carousel-autoplay@8.6.0:
+    resolution: {integrity: sha512-OBu5G3nwaSXkZCo1A6LTaFMZ8EpkYbwIaH+bPqdBnDGQ2fh4+NbzjXjs2SktoPNKCtflfVMc75njaDHOYXcrsA==}
+    peerDependencies:
+      embla-carousel: 8.6.0
+
+  embla-carousel-react@8.5.2:
+    resolution: {integrity: sha512-Tmx+uY3MqseIGdwp0ScyUuxpBgx5jX1f7od4Cm5mDwg/dptEiTKf9xp6tw0lZN2VA9JbnVMl/aikmbc53c6QFA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+
+  embla-carousel-react@8.6.0:
+    resolution: {integrity: sha512-0/PjqU7geVmo6F734pmPqpyHqiM99olvyecY7zdweCw+6tKEXnrE90pBiBbMMU8s5tICemzpQ3hi5EpxzGW+JA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+
+  embla-carousel-reactive-utils@8.5.2:
+    resolution: {integrity: sha512-QC8/hYSK/pEmqEdU1IO5O+XNc/Ptmmq7uCB44vKplgLKhB/l0+yvYx0+Cv0sF6Ena8Srld5vUErZkT+yTahtDg==}
+    peerDependencies:
+      embla-carousel: 8.5.2
+
+  embla-carousel-reactive-utils@8.6.0:
+    resolution: {integrity: sha512-fMVUDUEx0/uIEDM0Mz3dHznDhfX+znCCDCeIophYb1QGVM7YThSWX+wz11zlYwWFOr74b4QLGg0hrGPJeG2s4A==}
+    peerDependencies:
+      embla-carousel: 8.6.0
+
+  embla-carousel@8.5.2:
+    resolution: {integrity: sha512-xQ9oVLrun/eCG/7ru3R+I5bJ7shsD8fFwLEY7yPe27/+fDHCNj0OT5EoG5ZbFyOxOcG6yTwW8oTz/dWyFnyGpg==}
+
+  embla-carousel@8.6.0:
+    resolution: {integrity: sha512-SjWyZBHJPbqxHOzckOfo8lHisEaJWmwd23XppYFYVh10bU66/Pn5tkVkbkCMZVdbUE5eTCI2nD8OyIP4Z+uwkA==}
 
   emittery@0.7.2:
     resolution: {integrity: sha512-A8OG5SR/ij3SsJdWDJdkkSYUjQdCUx6APQXem0SaEePBSRg4eymGYwBkKo1Y6DU+af/Jn2dBQqDBvjnr9Vi8nQ==}
@@ -8069,6 +8346,9 @@ packages:
     engines: {node: '>= 8.9.0'}
     peerDependencies:
       webpack: ^4.0.0
+
+  file-saver@2.0.5:
+    resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==}
 
   file-selector@0.1.19:
     resolution: {integrity: sha512-kCWw3+Aai8Uox+5tHCNgMFaUdgidxvMnLWO6fM5sZ0hA2wlHP5/DHGF0ECe84BiB95qdJbKNEJhWKVDvMN+JDQ==}
@@ -10006,6 +10286,9 @@ packages:
       enquirer:
         optional: true
 
+  load-script@1.0.0:
+    resolution: {integrity: sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA==}
+
   load-tsconfig@0.2.5:
     resolution: {integrity: sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -11934,6 +12217,13 @@ packages:
       react: '>=15.6.2'
       react-dom: '>=15.6.2'
 
+  react-animate-height@3.2.3:
+    resolution: {integrity: sha512-R6DSvr7ud07oeCixScyvXWEMJY/Mt2+GyOWC1KMaRc69gOBw+SsCg4TJmrp4rKUM1hyd6p+YKw90brjPH93Y2A==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
   react-aria-components@1.13.0:
     resolution: {integrity: sha512-t1mm3AVy/MjUJBZ7zrb+sFC5iya8Vvw3go3mGKtTm269bXGZho7BLA4IgT+0nOS3j+ku6ChVi8NEoQVFoYzJJA==}
     peerDependencies:
@@ -11952,6 +12242,17 @@ packages:
     peerDependencies:
       react: ^16.8.5
       react-dom: ^16.8.5
+
+  react-colorful@5.6.1:
+    resolution: {integrity: sha512-1exovf0uGTGyq5mXQT0zgQ80uvj2PCwvF8zY1RN9/vbJVSjSo3fsB/4L3ObbF7u70NduSiK4xu4Y6q1MHoUGEw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
+  react-contenteditable@3.3.6:
+    resolution: {integrity: sha512-61+Anbmzggel1sP7nwvxq3d2woD3duR5R89RoLGqKan1A+nruFIcmLjw2F+qqk70AyABls0BDKzE1vqS1UIF1g==}
+    peerDependencies:
+      react: '>=16.3'
 
   react-cookie@4.1.1:
     resolution: {integrity: sha512-ffn7Y7G4bXiFbnE+dKhHhbP+b8I34mH9jqnm8Llhj89zF4nPxPutxHT1suUqMeCEhLDBI7InYwf1tpaSoK5w8A==}
@@ -12031,6 +12332,26 @@ packages:
 
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+
+  react-ga4@2.1.0:
+    resolution: {integrity: sha512-ZKS7PGNFqqMd3PJ6+C2Jtz/o1iU9ggiy8Y8nUeksgVuvNISbmrQtJiZNvC/TjDsqD0QlU5Wkgs7i+w9+OjHhhQ==}
+
+  react-google-recaptcha-v3@1.11.0:
+    resolution: {integrity: sha512-kLQqpz/77m8+trpBwzqcxNtvWZYoZ/YO6Vm2cVTHW8hs80BWUfDpC7RDwuAvpswwtSYApWfaSpIDFWAIBNIYxQ==}
+    peerDependencies:
+      react: ^16.3 || ^17.0 || ^18.0 || ^19.0
+      react-dom: ^17.0 || ^18.0 || ^19.0
+
+  react-html-props@2.1.1:
+    resolution: {integrity: sha512-tM+YCYlr90m3JontKUAa+gNVU2zkyprlCS7OQ9aa3z2MfyJjAioJzrSmi1Vef/+UCTE6CQlPqLX4ebdLIJDKxw==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+
+  react-image-crop@10.0.9:
+    resolution: {integrity: sha512-fqn6a811cx/sE7jtu8txL4lBTwgZYuEVNvy7UPKMNMWeRcZa6v0ja11+Gd9nZQiBfaxDal3PBcKhGBLQ956UNg==}
+    peerDependencies:
+      react: '>=16.13.1'
 
   react-image-gallery@1.2.7:
     resolution: {integrity: sha512-ts7yMWykvZhslGMuvVAUk7a1dJIx9QtIwK6Clv8dOGxPsJid92FRrLvXbZDvkYcUyj48sHalnBhqU6mZNCB2jg==}
@@ -12197,6 +12518,12 @@ packages:
       react: ^16.0.0
       react-dom: ^16.0.0
 
+  react-social-media-embed@2.5.18:
+    resolution: {integrity: sha512-+PkzLRGAwnySkxKajaiK5VD+EjOhlFsh/vjNxgHsDfKBTseDpFxPrMXXQWkk6BRCwFBNVWX+V1HZ9AU0y54Wgw==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+
   react-sortable-hoc@2.0.0:
     resolution: {integrity: sha512-JZUw7hBsAHXK7PTyErJyI7SopSBFRcFHDjWW5SWjcugY0i6iH7f+eJkY8cJmGMlZ1C9xz1J3Vjz0plFpavVeRg==}
     peerDependencies:
@@ -12208,6 +12535,12 @@ packages:
     resolution: {integrity: sha512-lYt2o1dd6dK8Bb4GRh08RG/2u64bSA1cqtRqtw4jEMgxC7Q17RFcIumBbChErndSdLzafEG/UBwV6shOfig6yw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+
+  react-sub-unsub@2.2.8:
+    resolution: {integrity: sha512-o3tmiOOZPdQUCmRhkdCHXRFLOHnCwdz/N3QZ1JQ14fQGA2HysKMF0kWu56ERnQUCK7wYVCQzI8pFbnivAYNQ+A==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
 
   react-test-renderer@18.2.0:
     resolution: {integrity: sha512-JWD+aQ0lh2gvh4NM3bBM42Kx+XybOxCpgYK7F8ugAlpaTSnWsX+39Z4XkOykGZAHrjwwTZT3x3KxswVWxHPUqA==}
@@ -12225,6 +12558,13 @@ packages:
     peerDependencies:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
+
+  react-twitter-embed@4.0.4:
+    resolution: {integrity: sha512-2JIL7qF+U62zRzpsh6SZDXNI3hRNVYf5vOZ1WRcMvwKouw+xC00PuFaD0aEp2wlyGaZ+f4x2VvX+uDadFQ3HVA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
 
   react-virtualized@9.22.3:
     resolution: {integrity: sha512-MKovKMxWTcwPSxE1kK1HcheQTWfuCxAuBoSTf2gwyMM21NdX/PXUhnoP8Uc5dRKd+nKm8v41R36OellhdCpkrw==}
@@ -12250,6 +12590,12 @@ packages:
       '@babel/runtime': ^7.0.0
       react: '>=0.14'
       react-with-direction: ^1.3.1
+
+  react-youtube@10.1.0:
+    resolution: {integrity: sha512-ZfGtcVpk0SSZtWCSTYOQKhfx5/1cfyEW1JN/mugGNfAxT3rmVJeMbGpA9+e78yG21ls5nc/5uZJETE3cm3knBg==}
+    engines: {node: '>= 14.x'}
+    peerDependencies:
+      react: '>=0.14.1'
 
   react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
@@ -12727,6 +13073,9 @@ packages:
     resolution: {integrity: sha512-g3WxHrqSWCZHGHlSrF51VXFdjImhwvH8ZO/pryFH56Qi0cDsZfylQa/t0jCzVQFNbNvM00HfHjkDPEuarKDSWQ==}
     engines: {node: '>=8'}
 
+  scriptjs@2.5.9:
+    resolution: {integrity: sha512-qGVDoreyYiP1pkQnbnFAUIS5AjenNwwQBdl7zeos9etl+hYKWahjRTfzAZZYBv5xNHx7vNKCmaLDQZ6Fr2AEXg==}
+
   scroll-into-view-if-needed@2.2.31:
     resolution: {integrity: sha512-dGCXy99wZQivjmjIqihaBQNjryrz5rueJY7eHfTdyWEiR4ttYpsajb14rn9s5d4DY4EcY6+4+U/maARBXJedkA==}
 
@@ -12918,6 +13267,9 @@ packages:
   sirv@3.0.2:
     resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
     engines: {node: '>=18'}
+
+  sister@3.0.2:
+    resolution: {integrity: sha512-p19rtTs+NksBRKW9qn0UhZ8/TUI9BPw9lmtHny+Y3TinWlOa9jWh9xB0AtPSdmOy49NJJJSSe0Ey4C7h0TrcYA==}
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -14096,6 +14448,10 @@ packages:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
 
+  uuid@11.1.0:
+    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+    hasBin: true
+
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
     deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
@@ -14263,6 +14619,17 @@ packages:
         optional: true
       jsdom:
         optional: true
+
+  volto-form-block@3.15.0:
+    resolution: {integrity: sha512-xUnxfgDtyEc3eNrjBL3BIdQuvwVEhwOKo8L/CNs398XQsEzz2Bjb4sZK/LPmGRh/ysWIwzghATZXvlNEhOvbpA==}
+    peerDependencies:
+      '@plone/volto': '>=16.0.0-alpha.38'
+      volto-subblocks: ^2.1.0
+
+  volto-subblocks@2.1.0:
+    resolution: {integrity: sha512-AlhMb+PacQRGCIY/xc7p1zr3RhN64An/+ckVQ2YOytIVOtoChMUwxxSIj5Fkz7uScgIlzL/n976QqJlIf4k0rg==}
+    peerDependencies:
+      '@plone/volto': '>=16.0.0-alpha.38'
 
   vue-template-compiler@2.7.16:
     resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
@@ -14690,6 +15057,9 @@ packages:
   yoctocolors@2.1.2:
     resolution: {integrity: sha512-CzhO+pFNo8ajLM2d2IW/R93ipy99LWjtwblvC1RsoSUMZgyLbYFr221TnSNT7GjGdYui6P459mw9JH/g/zW2ug==}
     engines: {node: '>=18'}
+
+  youtube-player@5.5.2:
+    resolution: {integrity: sha512-ZGtsemSpXnDky2AUYWgxjaopgB+shFHgXVpiJFeNB5nWEugpW1KWYDaHKuLqh2b67r24GtP6HoSW5swvf0fFIQ==}
 
   z-schema@5.0.5:
     resolution: {integrity: sha512-D7eujBWkLa3p2sIpJA0d1pr7es+a7m0vFAnZLlCEKq/Ij2k0MLi9Br2UPxoxdYystm5K1yeBGzub0FlYUEWj2Q==}
@@ -15773,6 +16143,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@datapunt/matomo-tracker-js@0.5.1': {}
+
   '@discoveryjs/json-ext@0.5.7': {}
 
   '@dnd-kit/accessibility@3.1.1(react@18.2.0)':
@@ -15801,6 +16173,14 @@ snapshots:
       tslib: 2.8.1
 
   '@dual-bundle/import-meta-resolve@4.2.1': {}
+
+  '@eeacms/volto-accordion-block@10.4.6':
+    dependencies:
+      '@eeacms/volto-widget-theme-picker': 2.0.0
+
+  '@eeacms/volto-timeline-block@2.0.1': {}
+
+  '@eeacms/volto-widget-theme-picker@2.0.0': {}
 
   '@emnapi/core@1.7.1':
     dependencies:
@@ -16196,6 +16576,11 @@ snapshots:
   '@hapi/topo@5.1.0':
     dependencies:
       '@hapi/hoek': 9.3.0
+
+  '@hcaptcha/react-hcaptcha@0.3.10(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
@@ -16640,6 +17025,188 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
+  '@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      classnames: 2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@kitconcept/volto-bm3-compat': 1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      classnames: 2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+
+  '@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@kitconcept/volto-bm3-compat': 1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      embla-carousel-autoplay: 8.5.2(embla-carousel@8.6.0)
+      embla-carousel-react: 8.5.2(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - classnames
+      - embla-carousel
+
+  '@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@datapunt/matomo-tracker-js': 0.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-ga4: 2.1.0
+
+  '@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-contenteditable: 3.3.6(react@18.2.0)
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  ? '@kitconcept/volto-light-theme@7.0.0-alpha.25(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-logos-block@3.0.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))'
+  : dependencies:
+      '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
+      '@eeacms/volto-accordion-block': 10.4.6
+      '@kitconcept/volto-banner-block': 1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-bm3-compat': 1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-button-block': 4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-carousel-block': 2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-dsgvo-banner': 2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-heading-block': 2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-highlight-block': 4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-introduction-block': 1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-logos-block': 3.0.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@kitconcept/volto-separator-block': 4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@kitconcept/volto-slider-block': 6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@plone/components': 3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@plonegovbr/volto-social-media': 2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      classnames: 2.5.1
+      embla-carousel-autoplay: 8.6.0(embla-carousel@8.6.0)
+      embla-carousel-react: 8.6.0(react@18.2.0)
+      lodash: 4.17.21
+      react: 18.2.0
+      react-animate-height: 3.2.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-aria-components: 1.13.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-colorful: 5.6.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      react-router-dom: 5.2.0(react@18.2.0)
+      uuid: 11.1.0
+    transitivePeerDependencies:
+      - embla-carousel
+      - storybook
+
+  ? '@kitconcept/volto-light-theme@7.6.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-logos-block@3.0.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))'
+  : dependencies:
+      '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
+      '@eeacms/volto-accordion-block': 10.4.6
+      '@kitconcept/volto-banner-block': 1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-bm3-compat': 1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-button-block': 4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-carousel-block': 2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-dsgvo-banner': 2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-heading-block': 2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-highlight-block': 4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-introduction-block': 1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@kitconcept/volto-logos-block': 3.0.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@kitconcept/volto-separator-block': 4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@kitconcept/volto-slider-block': 6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@plone/components': 3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@plonegovbr/volto-social-media': 2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      classnames: 2.5.1
+      embla-carousel-autoplay: 8.6.0(embla-carousel@8.6.0)
+      embla-carousel-react: 8.6.0(react@18.2.0)
+      lodash: 4.17.21
+      react: 18.2.0
+      react-animate-height: 3.2.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-aria-components: 1.13.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-colorful: 5.6.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      react-router-dom: 5.2.0(react@18.2.0)
+      uuid: 11.1.0
+    transitivePeerDependencies:
+      - embla-carousel
+      - storybook
+
+  ? '@kitconcept/volto-logos-block@3.0.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))'
+  : dependencies:
+      '@kitconcept/volto-light-theme': 7.6.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-logos-block@3.0.0(@eeacms/volto-accordion-block@10.4.6)(@kitconcept/volto-banner-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-bm3-compat@1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-button-block@4.0.0(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0))(@kitconcept/volto-carousel-block@2.0.0(classnames@2.5.1)(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-dsgvo-banner@2.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-heading-block@2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-introduction-block@1.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5)))(classnames@2.5.1)(embla-carousel@8.6.0)(lodash@4.17.21)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      '@plone/components': 3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      classnames: 2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@eeacms/volto-accordion-block'
+      - '@kitconcept/volto-banner-block'
+      - '@kitconcept/volto-bm3-compat'
+      - '@kitconcept/volto-button-block'
+      - '@kitconcept/volto-carousel-block'
+      - '@kitconcept/volto-dsgvo-banner'
+      - '@kitconcept/volto-heading-block'
+      - '@kitconcept/volto-highlight-block'
+      - '@kitconcept/volto-introduction-block'
+      - '@kitconcept/volto-separator-block'
+      - '@kitconcept/volto-slider-block'
+      - '@plonegovbr/volto-social-media'
+      - embla-carousel
+      - lodash
+      - react-redux
+      - react-router-dom
+      - storybook
+
+  '@kitconcept/volto-separator-block@4.2.1(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))':
+    dependencies:
+      '@plone/components': 3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+    transitivePeerDependencies:
+      - storybook
+
+  '@kitconcept/volto-slider-block@6.4.1(embla-carousel@8.6.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      deepmerge: 4.2.2
+      embla-carousel-autoplay: 8.6.0(embla-carousel@8.6.0)
+      embla-carousel-react: 8.6.0(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - embla-carousel
+
+  '@kitconcept/volto-social-blocks@1.0.0-alpha.8(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@plone/components': 1.7.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      classnames: 2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+      react-social-media-embed: 2.5.18(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+    transitivePeerDependencies:
+      - supports-color
+
   '@kwsites/file-exists@1.1.1':
     dependencies:
       debug: 4.3.4(supports-color@8.1.1)
@@ -16676,6 +17243,15 @@ snapshots:
     dependencies:
       make-dir: 3.1.0
       webpack: 5.90.1(esbuild@0.25.12)
+
+  '@mbarde/volto-image-crop-widget@0.5.1(react@18.2.0)':
+    dependencies:
+      '@plone/scripts': 3.10.3(debug@4.3.2)
+      react-image-crop: 10.0.9(react@18.2.0)
+    transitivePeerDependencies:
+      - debug
+      - react
+      - supports-color
 
   '@mdx-js/react@3.1.1(@types/react@18.3.27)(react@18.2.0)':
     dependencies:
@@ -17264,7 +17840,55 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@plone/scripts@3.10.3':
+  '@plone-collective/volto-authomatic@3.0.0-alpha.4(@plone/components@core+packages+components)(@plone/registry@core+packages+registry)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react@18.2.0)(semantic-ui-react@2.1.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+    dependencies:
+      '@plone/components': link:core/packages/components
+      '@plone/registry': link:core/packages/registry
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+      semantic-ui-react: 2.1.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+
+  '@plone/components@1.7.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@react-aria/utils': 3.31.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@react-spectrum/utils': 3.12.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      classnames: 2.5.1
+      clsx: 2.1.1
+      lodash: 4.17.21
+      react: 18.2.0
+      react-aria-components: 1.13.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+    optionalDependencies:
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@plone/components@3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))':
+    dependencies:
+      '@react-aria/utils': 3.31.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@react-spectrum/utils': 3.12.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@storybook/test': 8.6.14(storybook@8.6.14(prettier@3.2.5))
+      clsx: 2.1.1
+      react: 18.2.0
+      react-aria-components: 1.13.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+    optionalDependencies:
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - storybook
+
+  '@plone/registry@2.6.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      auto-config-loader: 1.7.8
+      crypto-random-string: 3.2.0
+      debug: 4.3.2
+      dependency-graph: 0.10.0
+      glob: 10.5.0
+      react: 18.2.0
+      tmp: 0.2.1
+    optionalDependencies:
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - supports-color
+
+  '@plone/scripts@3.10.3(debug@4.3.2)':
     dependencies:
       '@babel/core': 7.28.5
       babel-plugin-react-intl: 5.1.17
@@ -17280,10 +17904,163 @@ snapshots:
       lodash: 4.17.21
       mrs-developer: 2.3.2
       pofile: 1.0.10
-      wait-on: 7.2.0
+      wait-on: 7.2.0(debug@4.3.2)
     transitivePeerDependencies:
       - debug
       - supports-color
+
+  '@plone/volto-slate@18.8.0(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)':
+    dependencies:
+      classnames: 2.5.1
+      github-slugger: 1.4.0
+      image-extensions: 1.1.0
+      is-hotkey: 0.2.0
+      is-url: 1.2.4
+      jsdom: 16.7.0
+      lodash: 4.17.21
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-intersection-observer: 9.1.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      react-router-dom: 5.2.0(react@18.2.0)
+      react-toastify: 5.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      redux-mock-store: 1.5.4
+      semantic-ui-react: 2.1.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      slate: 0.100.0
+      slate-history: 0.100.0(slate@0.100.0)
+      slate-hyperscript: 0.100.0(slate@0.100.0)
+      slate-react: 0.98.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.100.0)
+      uuid: 9.0.1
+      weak-key: 1.0.3
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - bufferutil
+      - canvas
+      - react-native
+      - redux
+      - supports-color
+      - utf-8-validate
+
+  '@plone/volto@18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)':
+    dependencies:
+      '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
+      '@loadable/component': 5.14.1(react@18.2.0)
+      '@loadable/server': 5.14.0(@loadable/component@5.14.1(react@18.2.0))(react@18.2.0)
+      '@plone/registry': 2.6.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@plone/scripts': 3.10.3(debug@4.3.2)
+      '@plone/volto-slate': 18.8.0(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      '@redux-devtools/extension': 3.3.0(redux@4.2.1)
+      classnames: 2.5.1
+      connected-react-router: 6.8.0(history@4.10.1)(immutable@3.8.2)(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router@5.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)(seamless-immutable@7.1.4)
+      debug: 4.3.2
+      decorate-component-with-props: 1.2.1(react@18.2.0)
+      dependency-graph: 0.10.0
+      detect-browser: 5.1.0
+      diff: 3.5.0
+      express: 4.19.2
+      filesize: 6.4.0
+      full-icu: 1.4.0
+      github-slugger: 1.4.0
+      history: 4.10.1
+      hoist-non-react-statics: 3.3.2
+      http-proxy-middleware: 2.0.1(debug@4.3.2)
+      image-extensions: 1.1.0
+      immutable: 3.8.2
+      is-hotkey: 0.2.0
+      is-url: 1.2.4
+      jotai: 2.11.3(@types/react@18.3.27)(react@18.2.0)
+      jwt-decode: 2.2.0
+      linkify-it: 3.0.2
+      locale: 0.1.0
+      lodash: 4.17.21
+      lodash-move: 1.1.1
+      moment: 2.29.4
+      object-assign: 4.1.1
+      prepend-http: 2.0.0
+      pretty-bytes: 5.3.0
+      prismjs: 1.27.0
+      process: 0.11.10
+      promise-file-reader: 1.0.2
+      prop-types: 15.7.2
+      query-string: 7.1.0
+      rc-time-picker: 3.7.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 18.2.0
+      react-anchor-link-smooth-scroll: 1.0.12
+      react-animate-height: 2.0.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-beautiful-dnd: 13.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-cookie: 4.1.1(@types/react@18.3.27)(react@18.2.0)
+      react-dates: 21.5.1(@babel/runtime@7.28.4)(moment@2.29.4)(react-dom@18.2.0(react@18.2.0))(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      react-detect-click-outside: 1.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-dnd: 5.0.0(react@18.2.0)
+      react-dnd-html5-backend: 5.0.1
+      react-dom: 18.2.0(react@18.2.0)
+      react-dropzone: 11.1.0(react@18.2.0)
+      react-fast-compare: 2.0.4
+      react-image-gallery: 1.2.7(react@18.2.0)
+      react-intersection-observer: 9.1.0(react@18.2.0)
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+      react-intl-redux: 2.3.0(@babel/runtime@7.28.4)(prop-types@15.7.2)(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react@18.2.0)
+      react-medium-image-zoom: 3.0.15(prop-types@15.7.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      react-router: 5.2.0(react@18.2.0)
+      react-router-config: 5.1.1(react-router@5.2.0(react@18.2.0))(react@18.2.0)
+      react-router-dom: 5.2.0(react@18.2.0)
+      react-router-hash-link: 2.4.3(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)
+      react-select: 4.3.1(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-select-async-paginate: 0.5.3(react-dom@18.2.0(react@18.2.0))(react-select@4.3.1(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      react-side-effect: 2.1.2(react@18.2.0)
+      react-simple-code-editor: 0.7.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-sortable-hoc: 2.0.0(prop-types@15.7.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-test-renderer: 18.2.0(react@18.2.0)
+      react-toastify: 5.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-transition-group: 4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-virtualized: 9.22.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      redux: 4.2.1
+      redux-actions: 3.0.0
+      redux-connect: 10.0.0(prop-types@15.7.2)(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-config@5.1.1(react-router@5.2.0(react@18.2.0))(react@18.2.0))(react-router-dom@5.2.0(react@18.2.0))(react-router@5.2.0(react@18.2.0))(react@18.2.0)(redux-actions@3.0.0)
+      redux-localstorage-simple: 2.5.1
+      redux-mock-store: 1.5.4
+      redux-thunk: 2.4.2(redux@4.2.1)
+      rrule: 2.7.1
+      semantic-ui-less: 2.4.1
+      semantic-ui-react: 2.1.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      serialize-javascript: 3.1.0
+      slate: 0.100.0
+      slate-hyperscript: 0.100.0(slate@0.100.0)
+      slate-react: 0.98.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.100.0)
+      superagent: 3.8.2
+      tlds: 1.203.1
+      undoo: 0.5.0
+      universal-cookie: 4.0.4
+      universal-cookie-express: 4.0.3
+      url: 0.11.4
+      use-deep-compare-effect: 1.8.1(react@18.2.0)
+      uuid: 8.3.2
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - '@popperjs/core'
+      - '@types/react'
+      - '@types/react-dom'
+      - bufferutil
+      - canvas
+      - react-native
+      - react-with-direction
+      - seamless-immutable
+      - supports-color
+      - utf-8-validate
+
+  '@plonegovbr/volto-social-media@2.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))':
+    dependencies:
+      '@plone/components': 3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.14(prettier@3.2.5))
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - storybook
 
   '@pmmmwh/react-refresh-webpack-plugin@0.5.17(react-refresh@0.14.2)(sockjs-client@1.4.0)(type-fest@2.19.0)(webpack-dev-server@4.11.1(debug@4.3.2)(webpack@5.90.1(esbuild@0.25.12)))(webpack-hot-middleware@2.26.1)(webpack@5.90.1(esbuild@0.25.12))':
     dependencies:
@@ -18932,6 +19709,14 @@ snapshots:
       '@tanstack/query-core': 5.90.11
       react: 18.2.0
 
+  '@tanstack/react-table@8.21.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@tanstack/table-core': 8.21.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@tanstack/table-core@8.21.2': {}
+
   '@testing-library/cypress@10.0.1(cypress@13.13.2)':
     dependencies:
       '@babel/runtime': 7.20.6
@@ -19418,6 +20203,8 @@ snapshots:
     dependencies:
       '@types/node': 22.19.1
     optional: true
+
+  '@types/youtube-player@5.5.11': {}
 
   '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)':
     dependencies:
@@ -20408,7 +21195,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.13.2:
+  axios@1.13.2(debug@4.3.2):
     dependencies:
       follow-redirects: 1.15.11(debug@4.3.2)
       form-data: 4.0.5
@@ -22105,6 +22892,8 @@ snapshots:
 
   deepmerge@1.5.2: {}
 
+  deepmerge@4.2.2: {}
+
   deepmerge@4.3.1: {}
 
   default-browser-id@3.0.0:
@@ -22379,6 +23168,38 @@ snapshots:
       jake: 10.9.4
 
   electron-to-chromium@1.5.263: {}
+
+  embla-carousel-autoplay@8.5.2(embla-carousel@8.6.0):
+    dependencies:
+      embla-carousel: 8.6.0
+
+  embla-carousel-autoplay@8.6.0(embla-carousel@8.6.0):
+    dependencies:
+      embla-carousel: 8.6.0
+
+  embla-carousel-react@8.5.2(react@18.2.0):
+    dependencies:
+      embla-carousel: 8.5.2
+      embla-carousel-reactive-utils: 8.5.2(embla-carousel@8.5.2)
+      react: 18.2.0
+
+  embla-carousel-react@8.6.0(react@18.2.0):
+    dependencies:
+      embla-carousel: 8.6.0
+      embla-carousel-reactive-utils: 8.6.0(embla-carousel@8.6.0)
+      react: 18.2.0
+
+  embla-carousel-reactive-utils@8.5.2(embla-carousel@8.5.2):
+    dependencies:
+      embla-carousel: 8.5.2
+
+  embla-carousel-reactive-utils@8.6.0(embla-carousel@8.6.0):
+    dependencies:
+      embla-carousel: 8.6.0
+
+  embla-carousel@8.5.2: {}
+
+  embla-carousel@8.6.0: {}
 
   emittery@0.7.2: {}
 
@@ -23373,6 +24194,8 @@ snapshots:
       loader-utils: 1.4.2
       schema-utils: 2.7.1
       webpack: 5.90.1(esbuild@0.25.12)
+
+  file-saver@2.0.5: {}
 
   file-selector@0.1.19:
     dependencies:
@@ -25754,6 +26577,8 @@ snapshots:
       wrap-ansi: 7.0.0
     optionalDependencies:
       enquirer: 2.4.1
+
+  load-script@1.0.0: {}
 
   load-tsconfig@0.2.5: {}
 
@@ -28242,6 +29067,11 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
+  react-animate-height@3.2.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
   react-aria-components@1.13.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@internationalized/date': 3.10.0
@@ -28337,6 +29167,17 @@ snapshots:
     transitivePeerDependencies:
       - react-native
 
+  react-colorful@5.6.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  react-contenteditable@3.3.6(react@18.2.0):
+    dependencies:
+      fast-deep-equal: 3.1.3
+      prop-types: 15.7.2
+      react: 18.2.0
+
   react-cookie@4.1.1(@types/react@18.3.27)(react@18.2.0):
     dependencies:
       '@types/hoist-non-react-statics': 3.3.7(@types/react@18.3.27)
@@ -28367,6 +29208,28 @@ snapshots:
       react-with-direction: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-with-styles: 4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       react-with-styles-interface-css: 6.0.0(@babel/runtime@7.20.6)(react-with-styles@4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0))
+
+  react-dates@21.5.1(@babel/runtime@7.28.4)(moment@2.29.4)(react-dom@18.2.0(react@18.2.0))(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
+    dependencies:
+      '@babel/runtime': 7.28.4
+      airbnb-prop-types: 2.16.0(react@18.2.0)
+      consolidated-events: 2.0.2
+      enzyme-shallow-equal: 1.0.7
+      is-touch-device: 1.0.1
+      lodash: 4.17.21
+      moment: 2.29.4
+      object.assign: 4.1.7
+      object.values: 1.2.1
+      prop-types: 15.7.2
+      raf: 3.4.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-moment-proptypes: 1.8.1(moment@2.29.4)
+      react-outside-click-handler: 1.3.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-portal: 4.3.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-with-direction: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-with-styles: 4.2.0(@babel/runtime@7.28.4)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      react-with-styles-interface-css: 6.0.0(@babel/runtime@7.28.4)(react-with-styles@4.2.0(@babel/runtime@7.28.4)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0))
 
   react-detect-click-outside@1.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
@@ -28480,6 +29343,24 @@ snapshots:
 
   react-fast-compare@3.2.2: {}
 
+  react-ga4@2.1.0: {}
+
+  react-google-recaptcha-v3@1.11.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      hoist-non-react-statics: 3.3.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  react-html-props@2.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
+  react-image-crop@10.0.9(react@18.2.0):
+    dependencies:
+      clsx: 1.2.1
+      react: 18.2.0
+
   react-image-gallery@1.2.7(react@18.2.0):
     dependencies:
       react: 18.2.0
@@ -28496,6 +29377,14 @@ snapshots:
   react-intl-redux@2.3.0(@babel/runtime@7.20.6)(prop-types@15.7.2)(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.20.6
+      prop-types: 15.7.2
+      react: 18.2.0
+      react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
+      react-redux: 8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+
+  react-intl-redux@2.3.0(@babel/runtime@7.28.4)(prop-types@15.7.2)(react-intl@3.12.1(@types/react@18.3.27)(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react@18.2.0):
+    dependencies:
+      '@babel/runtime': 7.28.4
       prop-types: 15.7.2
       react: 18.2.0
       react-intl: 3.12.1(@types/react@18.3.27)(react@18.2.0)
@@ -28673,6 +29562,19 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
+  react-social-media-embed@2.5.18(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      '@types/youtube-player': 5.5.11
+      classnames: 2.5.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-html-props: 2.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-sub-unsub: 2.2.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-twitter-embed: 4.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-youtube: 10.1.0(react@18.2.0)
+    transitivePeerDependencies:
+      - supports-color
+
   react-sortable-hoc@2.0.0(prop-types@15.7.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.20.6
@@ -28711,6 +29613,11 @@ snapshots:
       '@react-types/shared': 3.32.1(react@18.2.0)
       react: 18.2.0
 
+  react-sub-unsub@2.2.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
   react-test-renderer@18.2.0(react@18.2.0):
     dependencies:
       react: 18.2.0
@@ -28735,6 +29642,12 @@ snapshots:
       prop-types: 15.7.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+
+  react-twitter-embed@4.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      scriptjs: 2.5.9
 
   react-virtualized@9.22.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
@@ -28767,6 +29680,13 @@ snapshots:
       global-cache: 1.2.1
       react-with-styles: 4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
 
+  react-with-styles-interface-css@6.0.0(@babel/runtime@7.28.4)(react-with-styles@4.2.0(@babel/runtime@7.28.4)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)):
+    dependencies:
+      '@babel/runtime': 7.28.4
+      array.prototype.flat: 1.3.3
+      global-cache: 1.2.1
+      react-with-styles: 4.2.0(@babel/runtime@7.28.4)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+
   react-with-styles@4.2.0(@babel/runtime@7.20.6)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.20.6
@@ -28776,6 +29696,25 @@ snapshots:
       prop-types: 15.7.2
       react: 18.2.0
       react-with-direction: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+
+  react-with-styles@4.2.0(@babel/runtime@7.28.4)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0):
+    dependencies:
+      '@babel/runtime': 7.28.4
+      airbnb-prop-types: 2.16.0(react@18.2.0)
+      hoist-non-react-statics: 3.3.2
+      object.assign: 4.1.7
+      prop-types: 15.7.2
+      react: 18.2.0
+      react-with-direction: 1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+
+  react-youtube@10.1.0(react@18.2.0):
+    dependencies:
+      fast-deep-equal: 3.1.3
+      prop-types: 15.8.1
+      react: 18.2.0
+      youtube-player: 5.5.2
+    transitivePeerDependencies:
+      - supports-color
 
   react@18.2.0:
     dependencies:
@@ -29434,6 +30373,8 @@ snapshots:
 
   scoped-regex@2.1.0: {}
 
+  scriptjs@2.5.9: {}
+
   scroll-into-view-if-needed@2.2.31:
     dependencies:
       compute-scroll-into-view: 1.0.20
@@ -29688,6 +30629,8 @@ snapshots:
       '@polka/url': 1.0.0-next.29
       mrmime: 2.0.1
       totalist: 3.0.1
+
+  sister@3.0.2: {}
 
   sisteransi@1.0.5: {}
 
@@ -31035,6 +31978,8 @@ snapshots:
 
   utils-merge@1.0.1: {}
 
+  uuid@11.1.0: {}
+
   uuid@3.4.0: {}
 
   uuid@8.3.2: {}
@@ -31290,6 +32235,26 @@ snapshots:
       - supports-color
       - terser
 
+  volto-form-block@3.15.0(@plone/volto@18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(volto-subblocks@2.1.0(@plone/volto@18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(react@18.2.0)):
+    dependencies:
+      '@hcaptcha/react-hcaptcha': 0.3.10(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@plone/volto': 18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)
+      '@tanstack/react-table': 8.21.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      file-saver: 2.0.5
+      react-google-recaptcha-v3: 1.11.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      volto-subblocks: 2.1.0(@plone/volto@18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(react@18.2.0)
+    transitivePeerDependencies:
+      - react
+      - react-dom
+
+  volto-subblocks@2.1.0(@plone/volto@18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(react@18.2.0):
+    dependencies:
+      '@plone/volto': 18.30.0(@babel/runtime@7.28.4)(@popperjs/core@2.11.8)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)
+      react-dnd: 5.0.0(react@18.2.0)
+      react-dnd-html5-backend: 5.0.1
+    transitivePeerDependencies:
+      - react
+
   vue-template-compiler@2.7.16:
     dependencies:
       de-indent: 1.0.2
@@ -31324,9 +32289,9 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  wait-on@7.2.0:
+  wait-on@7.2.0(debug@4.3.2):
     dependencies:
-      axios: 1.13.2
+      axios: 1.13.2(debug@4.3.2)
       joi: 17.13.3
       lodash: 4.17.21
       minimist: 1.2.8
@@ -31860,6 +32825,14 @@ snapshots:
   yoctocolors-cjs@2.1.3: {}
 
   yoctocolors@2.1.2: {}
+
+  youtube-player@5.5.2:
+    dependencies:
+      debug: 2.6.9
+      load-script: 1.0.0
+      sister: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
 
   z-schema@5.0.5:
     dependencies:

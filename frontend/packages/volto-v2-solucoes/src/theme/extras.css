@@ -1,0 +1,60 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Texta Alt';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/TextaAltRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Texta Alt';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/TextaAltMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Texta Alt';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/TextaAltBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Texta Alt';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/TextaAltLight.ttf') format('truetype');
+}
+
+:root {
+  --primary: #f39200;
+  --secondary: #0d1514;
+  --background-color: #f9f9f9;
+  --text-dark: #1e1e1e;
+  --text-light: #f9f9f9;
+
+  --primary-dark: #cc7b00;
+  --text-light-dark: #ddd;
+
+  --header-background-color: var(--secondary);
+  --header-text-color: var(--text-light);
+
+  --site-font-text: 'Texta Alt', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  font-family:
+    'Texta Alt',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+}

@@ -1,0 +1,387 @@
+/* stylelint-disable order/properties-order */
+
+/* ------------------ LOGO ------------------ */
+.v2-logo {
+  display: flex;
+}
+
+.v2-logo img {
+  width: 100%;
+  max-width: 396px;
+  height: auto;
+  object-fit: cover;
+  transition: height 0.2s ease;
+}
+
+/* ------------------ NAV WRAPPER ------------------ */
+.v2-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.v2-nav a {
+  transition: all 0.25s ease;
+}
+
+/* ------------------ DESKTOP MENU ------------------ */
+.v2-menu-desktop {
+  display: flex;
+  align-items: center;
+}
+
+/* Container dos links principais */
+.v2-menu-main {
+  display: flex;
+  align-items: center;
+}
+
+/* Separadores verticais entre links */
+.v2-menu-main .v2-link {
+  position: relative;
+  font-family: var(--site-font-text);
+  font-weight: 700;
+  padding: 10px 20px;
+  border-left: 1px solid rgba(233, 233, 233, 0.15);
+  white-space: nowrap;
+}
+
+.v2-menu-main .v2-link:last-child {
+  border-right: 1px solid rgba(233, 233, 233, 0.15);
+}
+
+/* ------------------ LINKS PRINCIPAIS ------------------ */
+.v2-link,
+.v2-link:visited {
+  color: var(--text-light);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.v2-link:hover {
+  color: var(--primary);
+}
+
+/* underline animado */
+.v2-link .content-link {
+  position: relative;
+  display: inline-block;
+}
+
+.v2-link .content-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 120%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-light);
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* link ativo, sem hover do container */
+.v2-link.active .content-link::after {
+  transform: scaleX(1);
+}
+
+/* se o mouse estiver sobre o grupo, o ativo “apaga” */
+.v2-menu-main:hover .v2-link.active .content-link::after {
+  transform: scaleX(0);
+}
+
+/* no hover de qualquer link, a barrinha aparece */
+.v2-menu-main:hover .v2-link:hover .content-link::after {
+  transform: scaleX(1);
+}
+
+/* cor da barrinha quando hover */
+.v2-link:hover .content-link::after {
+  background-color: var(--primary);
+}
+
+/* ------------------ MENU “MAIS ▾” ------------------ */
+.v2-menu-more {
+  position: relative;
+}
+
+/* botão Mais com ícone de seta */
+.v2-more-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: none;
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 16px;
+  font-family: var(--site-font-text);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.v2-more-button:hover {
+  color: var(--primary);
+}
+
+/* ícone seta */
+.v2-more-arrow {
+  transition: transform 0.2s ease;
+}
+
+/* gira a seta quando aberto */
+.v2-more-button[aria-expanded="true"] .v2-more-arrow {
+  transform: rotate(180deg);
+}
+
+/* recoloriza o SVG via stroke */
+.v2-more-button .v2-more-arrow {
+  color: transparent;
+}
+
+.v2-more-button:hover .v2-more-arrow path {
+  stroke: var(--primary);
+}
+
+/* dropdown “Mais” com animação suave */
+.v2-more-menu {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  right: 0;
+  min-width: 200px;
+  margin-top: 16px;
+  padding: 0;
+  border-radius: 4px;
+  background: var(--header-background-color);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  list-style: none;
+
+  opacity: 0;
+  transform: translateY(4px);
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s ease;
+}
+
+/* estado aberto – entra/saí suave */
+.v2-more-menu.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.v2-more-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.v2-more-menu li:last-child {
+  border-bottom: 0;
+}
+
+.v2-more-menu li a {
+  display: block;
+  padding: 10px 20px;
+  border-right: none !important;
+  font-size: 16px;
+}
+
+/* ------------------ ACTION BUTTONS ------------------ */
+.v2-menu-actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn-v2-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  color: var(--text-light);
+  font-family: var(--site-font-text);
+  font-size: 16px;
+  font-weight: 700;
+  gap: 4px;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-v2-link:first-child {
+  border-left: 0;
+}
+
+.btn-v2-link:hover {
+  background: transparent;
+  color: var(--primary);
+}
+
+.btn-v2-link.active,
+.btn-v2-link:active {
+  color: var(--text-light);
+}
+
+.content-btn {
+  display: flex;
+}
+
+.content-btn-icon {
+  color: transparent;
+}
+
+.btn-v2-link:hover .content-btn-icon {
+  color: transparent;
+}
+
+.btn-v2-link:hover .content-btn-icon path {
+  stroke: var(--primary);
+}
+
+.btn-v2-link:active .content-btn-icon path,
+.btn-v2-link.active .content-btn-icon path {
+  stroke: var(--text-light);
+}
+
+.content-btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.btn-line1 {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.btn-line2 {
+  font-size: 13px;
+}
+
+/* ------------------ HAMBURGUER ------------------ */
+.v2-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  gap: 6px;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+.v2-burger span {
+  width: 32px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--text-light);
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* animação pra X */
+.v2-burger.is-open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.v2-burger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.v2-burger.is-open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ------------------ MOBILE MENU (drawer) ------------------ */
+.v2-mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 850;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* overlay escuro de fundo */
+.v2-mobile-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* painel lateral (estilo drawer moderno) */
+.v2-mobile-menu nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(320px, 80vw);
+  background: var(--header-background-color);
+  padding: 96px 24px 24px;
+  box-shadow: -12px 0 30px rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+}
+
+/* estado aberto */
+.v2-mobile-menu.is-open {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.v2-mobile-menu.is-open nav {
+  transform: translateX(0);
+}
+
+/* links dentro do drawer */
+.v2-mobile-link,
+.v2-mobile-link:visited {
+  color: var(--text-light);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.v2-mobile-link:last-child {
+  border-bottom: 0;
+}
+
+.v2-mobile-link.active {
+  color: var(--primary);
+}
+
+/* ------------------ MOBILE BREAKPOINTS ------------------ */
+@media (max-width: 960px) {
+  .v2-menu-desktop {
+    display: none;
+  }
+
+  .v2-burger {
+    display: flex;
+  }
+
+  /* só pra garantir que nada de separador vazado apareça */
+  .v2-menu-main .v2-link::before {
+    content: none !important;
+  }
+
+}
