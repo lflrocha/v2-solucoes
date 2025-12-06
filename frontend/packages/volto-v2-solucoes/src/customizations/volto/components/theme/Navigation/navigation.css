@@ -43,9 +43,13 @@
   position: relative;
   font-family: var(--site-font-text);
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 0px 20px;
   border-left: 1px solid rgba(233, 233, 233, 0.15);
   white-space: nowrap;
+}
+
+.v2-menu-more .v2-link {
+  padding: 10px 20px;
 }
 
 .v2-menu-main .v2-link:last-child {
@@ -367,6 +371,16 @@
 
 .v2-mobile-link.active {
   color: var(--primary);
+}
+
+/* ------------------ FOCUS VISÍVEL (ACESSIBILIDADE) ------------------ */
+.v2-link:focus-visible,
+.btn-v2-link:focus-visible,
+.v2-more-button:focus-visible,
+.v2-mobile-link:focus-visible,
+.v2-burger:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
 }
 
 /* ------------------ MOBILE BREAKPOINTS ------------------ */

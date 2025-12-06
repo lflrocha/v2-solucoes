@@ -15,3 +15,15 @@ msgstr ""
 "Language-Name: Português do Brasil\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
+
+msgid "skip_to_main_content"
+msgstr "Ir para o conteúdo principal"
+
+msgid "skip_to_navigation"
+msgstr "Ir para a navegação"
+
+msgid "skip_to_footer"
+msgstr "Ir para o rodapé"
+
+msgid "skip_to"
+msgstr "Pular para"

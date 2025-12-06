@@ -1,3 +1,5 @@
+// packages/volto-v2-solucoes/src/customizations/volto/components/theme/Navigation/Navigation.jsx
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Image from '@plone/volto/components/theme/Image/Image';
@@ -35,6 +37,9 @@ const ACTION_ITEMS = [
   },
 ];
 
+const MORE_MENU_ID = 'v2-more-menu';
+const MOBILE_MENU_ID = 'v2-mobile-menu';
+
 const Navigation = () => {
   const [visibleItems, setVisibleItems] = useState(ALL_ITEMS);
   const [overflowItems, setOverflowItems] = useState([]);
@@ -42,9 +47,11 @@ const Navigation = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const moreRef = useRef(null);
+  const burgerRef = useRef(null);
+  const firstMobileLinkRef = useRef(null);
 
   /* ------------------------------
-     CALCULO DE OVERFLOW RESPONSIVO
+     OVERFLOW RESPONSIVO (botão “Mais”)
   -------------------------------- */
   useEffect(() => {
     const handleResize = () => {
@@ -70,7 +77,7 @@ const Navigation = () => {
   }, []);
 
   /* ------------------------------
-     FECHAR MENU “MAIS” AO ROLAR
+     FECHAR “Mais” AO ROLAR
   -------------------------------- */
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +89,7 @@ const Navigation = () => {
   }, [moreOpen]);
 
   /* ------------------------------------------
-     FECHAR MENU “MAIS” AO CLICAR FORA
+     FECHAR “Mais” AO CLICAR FORA
   ------------------------------------------ */
   useEffect(() => {
     function handleClickOutside(e) {
@@ -99,9 +106,48 @@ const Navigation = () => {
   }, [moreOpen]);
 
   /* ------------------------------------------
+     ESC fecha “Mais” e menu mobile
+  ------------------------------------------ */
+  useEffect(() => {
+    function handleKeydown(e) {
+      if (e.key === 'Escape') {
+        if (moreOpen || mobileOpen) {
+          e.stopPropagation();
+        }
+        setMoreOpen(false);
+        setMobileOpen(false);
+        if (burgerRef.current) {
+          burgerRef.current.focus();
+        }
+      }
+    }
+
+    if (moreOpen || mobileOpen) {
+      document.addEventListener('keydown', handleKeydown);
+    }
+
+    return () => document.removeEventListener('keydown', handleKeydown);
+  }, [moreOpen, mobileOpen]);
+
+  /* ------------------------------------------
+     FOCO no drawer mobile (abre -> 1º link,
+     fecha -> volta pro hambúrguer)
+  ------------------------------------------ */
+  useEffect(() => {
+    if (mobileOpen) {
+      if (firstMobileLinkRef.current) {
+        firstMobileLinkRef.current.focus();
+      }
+    } else if (!mobileOpen && burgerRef.current) {
+      burgerRef.current.focus();
+    }
+  }, [mobileOpen]);
+
+  /* ------------------------------------------
      MOBILE CONTROLS
   ------------------------------------------ */
   const toggleMobile = () => setMobileOpen((prev) => !prev);
+
   const closeMobile = () => {
     setMobileOpen(false);
     setMoreOpen(false);
@@ -111,6 +157,7 @@ const Navigation = () => {
 
   return (
     <>
+      {/* NAV DESKTOP / TABLET */}
       <nav className="v2-nav" aria-label="Menu principal">
         <Link to="/" className="v2-logo" onClick={closeMobile}>
           <Image src={LogoV2} alt="V2 Tec Soluções" />
@@ -137,7 +184,8 @@ const Navigation = () => {
                   className="v2-more-button"
                   aria-haspopup="true"
                   aria-expanded={moreOpen}
-                  onClick={() => setMoreOpen(!moreOpen)}
+                  aria-controls={MORE_MENU_ID}
+                  onClick={() => setMoreOpen((open) => !open)}
                 >
                   <span>Mais</span>
                   <Icon
@@ -150,8 +198,9 @@ const Navigation = () => {
 
                 {overflowItems.length > 0 && (
                   <ul
+                    id={MORE_MENU_ID}
                     className={`v2-more-menu ${moreOpen ? 'is-open' : ''}`}
-                    role="menu"
+                    aria-label="Mais páginas"
                   >
                     {overflowItems.map((item) => (
                       <li key={item.to}>
@@ -197,11 +246,14 @@ const Navigation = () => {
           </div>
         </div>
 
+        {/* HAMBÚRGUER (MOBILE) */}
         <button
           type="button"
           className={`v2-burger ${mobileOpen ? 'is-open' : ''}`}
           aria-label={mobileOpen ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={mobileOpen}
+          aria-controls={MOBILE_MENU_ID}
+          ref={burgerRef}
           onClick={toggleMobile}
         >
           <span />
@@ -210,12 +262,13 @@ const Navigation = () => {
         </button>
       </nav>
 
+      {/* MENU MOBILE */}
       <div
         className={`v2-mobile-menu ${mobileOpen ? 'is-open' : ''}`}
         aria-hidden={!mobileOpen}
       >
-        <nav aria-label="Menu móvel">
-          {mobileItems.map((item) => (
+        <nav id={MOBILE_MENU_ID} aria-label="Menu móvel">
+          {mobileItems.map((item, index) => (
             <NavLink
               key={item.to}
               to={item.to}
@@ -223,6 +276,7 @@ const Navigation = () => {
               className="v2-mobile-link"
               activeClassName="active"
               onClick={closeMobile}
+              ref={index === 0 ? firstMobileLinkRef : undefined}
             >
               {item.label || `${item.label1} ${item.label2}`}
             </NavLink>
