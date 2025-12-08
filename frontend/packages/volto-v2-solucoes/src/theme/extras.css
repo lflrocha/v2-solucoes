@@ -58,3 +58,18 @@ body {
     'Segoe UI',
     sans-serif;
 }
+
+/* Wrapper central com largura máxima */
+.conteudo-centralizado {
+  width: 100%;
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0 ;
+  z-index: 2;
+}
+
+@media (max-width: 1570px) {
+  .conteudo-centralizado {
+    padding: 0 1.65rem;
+  }
+}
