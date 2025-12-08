@@ -1,8 +1,8 @@
 /* ---------------- BASE ---------------- */
 .v2-header-wrapper {
+  position: relative;
   width: 100%;
   color: var(--text-light);
-  position: relative;
 }
 
 .v2-header-inner {
@@ -26,17 +26,17 @@
 
 .is-authenticated .v2-header-static {
   position: relative;
-  background-color: var(--secondary);
   border-bottom: 8px solid var(--primary);
+  background-color: var(--secondary);
 }
 
 /* ---------------- HEADER STICKY / COMPACTO ---------------- */
 .v2-header-sticky {
   position: fixed;
+  z-index: 900;
   top: -120px; /* começa escondido acima da viewport */
   left: 0;
   width: 100%;
-  z-index: 900;
   background: var(--header-background-color);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   transition:
@@ -90,4 +90,3 @@
 .v2-header-sticky .v2-menu-main .v2-link:last-child {
   border-right: 0;
 }
-

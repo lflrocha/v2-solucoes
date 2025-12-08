@@ -75,7 +75,7 @@
 }
 
 .v2-link .content-link::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 120%;
@@ -140,7 +140,7 @@
 }
 
 /* gira a seta quando aberto */
-.v2-more-button[aria-expanded="true"] .v2-more-arrow {
+.v2-more-button[aria-expanded='true'] .v2-more-arrow {
   transform: rotate(180deg);
 }
 
@@ -320,7 +320,7 @@
 
 /* overlay escuro de fundo */
 .v2-mobile-menu::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);

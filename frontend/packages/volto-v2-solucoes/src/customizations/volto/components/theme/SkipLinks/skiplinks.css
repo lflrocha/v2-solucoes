@@ -1,14 +1,14 @@
 .v2-skiplinks {
   position: fixed;
+  z-index: 3000;
   top: 12px;
   left: 12px;
-  z-index: 3000;
 }
 
 /* zera layout da lista */
 .v2-skiplinks__list {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -19,42 +19,42 @@
 /* link visualmente escondido por padrão (mas ainda acessível pra leitores de tela) */
 .v2-skiplinks__link {
   position: absolute;
-  left: 12px;
   top: 12px;
+  left: 12px;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
 
   padding: 10px 16px;
-  border-radius: 999px;
   border: 2px solid var(--primary);
+  border-radius: 999px;
   background: rgba(13, 21, 20, 0.96); /* var(--secondary) bem carregado */
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+
+  /* “esconde” visualmente */
+  clip-path: inset(50%);
   color: var(--text-light);
   font-family: var(--site-font-text);
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-
-  /* “esconde” visualmente */
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
   transition:
     transform 0.18s ease-out,
     box-shadow 0.18s ease-out,
     background 0.18s ease-out;
+  white-space: nowrap;
 }
 
 /* quando o link recebe foco, ele aparece */
 .v2-skiplinks__link:focus,
 .v2-skiplinks__link:active {
-  clip-path: none;
   width: auto;
   height: auto;
-  white-space: nowrap;
+  clip-path: none;
 
   transform: translateY(0);
+  white-space: nowrap;
 }
 
 /* hover extra (pra quem usa mouse) */

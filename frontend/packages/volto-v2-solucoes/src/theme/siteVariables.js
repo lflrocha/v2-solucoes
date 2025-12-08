@@ -1,4 +1,4 @@
-export default {
+const siteVariables = {
   /* CORES PRINCIPAIS */
   'color-primary': '#F39200',
   'color-secondary': '#0D1514',
@@ -22,3 +22,5 @@ export default {
   'header-background-color': '#0D1514',
   'header-text-color': '#ffffff',
 };
+
+export default siteVariables;

@@ -1,27 +1,27 @@
 .v2-hero {
   position: relative;
+  display: flex;
   width: 100%;
   max-width: 100% !important;
   min-height: 720px;
-  display: flex;
   align-items: center;
   border-bottom: 16px solid var(--primary);
+  background-position: left center;
+  background-repeat: no-repeat;
 
   /* Imagem de fundo fica no próprio container */
   background-size: cover;
-  background-position: left center;
-  background-repeat: no-repeat;
 
   /* Overlay degradê por cima da imagem (mas atrás do texto) */
   .v2-hero__overlay {
     position: absolute;
-    inset: 0;
+    z-index: 1;
     background: linear-gradient(
       90deg,
       rgba(13, 21, 20, 0.9) 25%,
       rgba(13, 21, 20, 0.1) 100%
     );
-    z-index: 1;
+    inset: 0;
     pointer-events: none;
   }
 
@@ -31,8 +31,8 @@
     z-index: 2;
     width: 100%;
     max-width: 1570px;
-    margin: 0 auto;
     padding: 0 2.5rem;
+    margin: 0 auto;
   }
 
   /* Conteúdo do texto */
@@ -42,41 +42,41 @@
     color: var(--text-light);
 
     h1 {
+      margin-bottom: 1.5rem;
       font-size: 2.8rem;
       font-weight: 800;
-      margin-bottom: 1.5rem;
       line-height: 1.2;
     }
 
     .subtitle {
-      font-size: 1.25rem;
       margin-bottom: 2rem;
-      opacity: 0.9;
+      font-size: 1.25rem;
       line-height: 1.45;
+      opacity: 0.9;
     }
 
     /* Botões */
     .buttons {
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
+      gap: 1rem;
 
       .btn {
-        padding: 0.9rem 1.8rem;
-        border-radius: 6px;
-        font-weight: 600;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        line-height: 1.5;
-        transition: all 0.2s ease;
-        text-decoration: none !important;
+        padding: 0.9rem 1.8rem;
+        border-radius: 6px;
         cursor: pointer;
+        font-weight: 600;
+        line-height: 1.5;
+        text-decoration: none !important;
+        transition: all 0.2s ease;
 
         &.btn-primary {
+          border: none;
           background: var(--primary);
           color: var(--secondary);
-          border: none;
 
           &:hover,
           &:focus-visible {
@@ -88,8 +88,8 @@
 
         &.btn-outline {
           border: 2px solid rgba(255, 255, 255, 0.8);
-          color: #ffffff;
           background: transparent;
+          color: #ffffff;
 
           &:hover,
           &:focus-visible {
@@ -143,8 +143,8 @@
   @media (max-width: 980px) {
     .v2-hero__content {
       h1 {
-        font-size: 2rem;
         margin-bottom: 1rem;
+        font-size: 2rem;
       }
     }
   }
@@ -170,13 +170,13 @@
       text-align: left;
 
       h1 {
-        font-size: 2.2rem;
         margin-bottom: 1rem;
+        font-size: 2.2rem;
       }
 
       .subtitle {
-        font-size: 1rem;
         margin-bottom: 1.5rem;
+        font-size: 1rem;
       }
 
       .buttons {
@@ -215,12 +215,12 @@
 
   @media (max-width: 380px) {
     .v2-hero__overlay {
+      backdrop-filter: blur(10px);
       background: linear-gradient(
         180deg,
         rgba(13, 21, 20, 0.55) 0%,
         rgba(13, 21, 20, 0.8) 100%
       );
-      backdrop-filter: blur(10px);
     }
   }
 }
