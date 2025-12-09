@@ -14,9 +14,9 @@ import './navigation.css';
 
 const ALL_ITEMS = [
   { to: '/', label: 'Início', exact: true },
-  { to: '/quem-somos', label: 'Quem Somos' },
-  { to: '/solucoes', label: 'Soluções e Serviços' },
-  { to: '/cases', label: 'Cases de Sucesso' },
+  { to: '/quem-somos/nossa-historia', label: 'Quem Somos' },
+  { to: '/solucoes-e-servicos', label: 'Soluções e Serviços' },
+  { to: '/cases-de-sucesso', label: 'Cases de Sucesso' },
   { to: '/carreiras', label: 'Carreiras' },
 ];
 

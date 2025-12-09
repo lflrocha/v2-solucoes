@@ -133,7 +133,7 @@
     .bg-shape {
       right: -5%;
       bottom: -8%;
-      border-bottom-left-radius: 350px;
+      border-top-left-radius: 350px;
     }
   }
 
@@ -163,11 +163,18 @@
     }
 
     .bg-shape {
-      top: -10%;
-      left: 10%;
       width: 80%;
-      height: 55%;
-      border-radius: 220px;
+      height: 25%;
+    }
+
+    &.image-left .bg-shape {
+      border-top-right-radius: 250px;
+    }
+
+    &.image-right .bg-shape {
+      right: -8%;
+      bottom: -5%;
+      border-top-left-radius: 0;
     }
   }
 }
