@@ -30,7 +30,8 @@
     "release-major-alpha": "pnpm --filter volto-v2-solucoes release-major-alpha",
     "release-alpha": "pnpm --filter volto-v2-solucoes release-alpha",
     "storybook": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto storybook dev -p 6006 -c $(pwd)/.storybook",
-    "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
+    "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook",
+    "stylefix": "stylelint 'packages/**/src/**/*.{css,scss,less}' --fix && prettier --write 'packages/**/src/**/*.{js,jsx,ts,tsx,css,scss,less}'"
   },
   "dependencies": {
     "@plone/volto": "^18.3.0",

@@ -59,6 +59,10 @@ body {
     sans-serif;
 }
 
+* {
+  font-family: var(--site-font-text);
+}
+
 /* Wrapper central com largura máxima */
 .conteudo-centralizado {
   z-index: 2;
@@ -71,5 +75,11 @@ body {
 @media (max-width: 1570px) {
   .conteudo-centralizado {
     padding: 0 1.65rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo-centralizado {
+    padding: 0 1rem 0;
   }
 }

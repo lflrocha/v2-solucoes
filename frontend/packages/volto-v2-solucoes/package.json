@@ -24,7 +24,8 @@
     "dry-release": "release-it --dry-run",
     "release": "release-it",
     "release-major-alpha": "release-it major --preRelease=alpha",
-    "release-alpha": "release-it --preRelease=alpha"
+    "release-alpha": "release-it --preRelease=alpha",
+    "lint:fix": "stylelint 'packages/**/src/**/*.{css,scss,less}' --fix && prettier --write 'packages/**/src/**/*.{js,jsx,ts,tsx,css,scss,less}'"
   },
   "addons": [
     "@eeacms/volto-accordion-block",

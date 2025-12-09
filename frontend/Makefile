@@ -144,3 +144,7 @@ ci-acceptance-test: ## Run cypress tests in headless mode for CI
 .PHONY: build-image
 build-image:  ## Build Docker Image
 	@DOCKER_BUILDKIT=1 docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg VOLTO_VERSION=$(VOLTO_VERSION)
+
+.PHONY: lint-fix
+lint-fix:
+	pnpm stylefix
