@@ -1,5 +1,3 @@
-// src/components/Blocks/SplitMediaSection/SplitMediaSectionView.jsx
-
 import React from 'react';
 import cx from 'classnames';
 import './styles.less';

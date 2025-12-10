@@ -63,6 +63,15 @@ body {
   font-family: var(--site-font-text);
 }
 
+#toolbar .toolbar-content.show,
+#toolbar .toolbar.expanded {
+  z-index: 1000;
+}
+
+.v2-layout ~ .content-area .blocks-group-wrapper {
+  padding-bottom: 0 !important;
+}
+
 /* Wrapper central com largura máxima */
 .conteudo-centralizado {
   z-index: 2;

@@ -23,7 +23,10 @@ const Header = () => {
   return (
     <>
       {/* ÚNICO header semântico */}
-      <header className="v2-header-wrapper v2-header-static" role="banner">
+      <header
+        className="v2-header-wrapper v2-header-static v2-layout"
+        role="banner"
+      >
         <SkipLinks />
         <div className="v2-header-inner">
           <Navigation />
