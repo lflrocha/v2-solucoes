@@ -4,6 +4,7 @@ import applyHero from './components/Blocks/Hero/config';
 import splitMediaSection from './components/Blocks/SplitMediaSection/config';
 import contactSection from './components/Blocks/V2ContactSection/config';
 import serviceCards from './components/Blocks/ServiceCards/config';
+import successCases from './components/Blocks/SuccessCases/config';
 import './theme/extras.css';
 
 function applyConfig(config: ConfigType) {
@@ -15,6 +16,7 @@ function applyConfig(config: ConfigType) {
   splitMediaSection(config);
   contactSection(config);
   serviceCards(config);
+  successCases(config);
 
   return config;
 }
