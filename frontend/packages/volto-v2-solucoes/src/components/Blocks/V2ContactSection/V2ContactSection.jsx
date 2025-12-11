@@ -44,7 +44,7 @@ const V2ContactSection = ({
             {title}
           </h2>
 
-          <div className="v2-contact__divider" />
+          <span className="line" aria-hidden="true" />
 
           {subtitle && <p className="v2-contact__subtitle">{subtitle}</p>}
 
@@ -83,7 +83,7 @@ const V2ContactSection = ({
           onSubmit={handleSubmit}
           aria-labelledby="v2-contact-form-title"
         >
-          <h3 id="v2-contact-form-title" className="v2-contact__form-title">
+          <h3 id="v2-contact-form-title" className="sr-only">
             Envie uma mensagem
           </h3>
 

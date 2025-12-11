@@ -23,6 +23,17 @@
 /* ---------------------------------------------
    COLUNA ESQUERDA
 --------------------------------------------- */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
 
 .v2-contact__title {
   margin: 0 0 0.6rem;
@@ -58,6 +69,7 @@
 }
 
 .v2-contact__contact-item {
+  width: fit-content;
   color: var(--text-light) !important;
   font-size: 20px;
   text-decoration: none !important;
@@ -179,5 +191,15 @@
 
   .v2-contact__form {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .v2-contact__title {
+    font-size: 2rem;
+  }
+
+  .v2-contact__image {
+    border-radius: 10px 50px;
   }
 }
