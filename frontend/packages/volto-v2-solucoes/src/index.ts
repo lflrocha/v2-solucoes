@@ -5,6 +5,7 @@ import splitMediaSection from './components/Blocks/SplitMediaSection/config';
 import contactSection from './components/Blocks/V2ContactSection/config';
 import serviceCards from './components/Blocks/ServiceCards/config';
 import successCases from './components/Blocks/SuccessCases/config';
+import clientsPartness from './components/Blocks/ClientsPartners/config';
 import './theme/extras.css';
 
 function applyConfig(config: ConfigType) {
@@ -17,6 +18,7 @@ function applyConfig(config: ConfigType) {
   contactSection(config);
   serviceCards(config);
   successCases(config);
+  clientsPartness(config);
 
   return config;
 }

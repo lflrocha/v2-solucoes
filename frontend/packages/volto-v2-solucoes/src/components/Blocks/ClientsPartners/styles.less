@@ -1,0 +1,223 @@
+.v2-clients-partners {
+  max-width: 100% !important;
+  box-sizing: border-box;
+  padding-top: 103px;
+  padding-bottom: 103px;
+  background: var(--secondary);
+  color: var(--text-light);
+}
+
+.v2-clients {
+  padding-bottom: 103px;
+}
+
+.v2-clients__title-wrapper {
+  margin-bottom: 0.6rem;
+  font-size: 2.5rem;
+}
+
+.v2-clients__title {
+  margin-bottom: 0.6rem;
+  font-size: 2.5rem;
+}
+
+/* Carrossel infinito */
+
+.v2-clients__carousel {
+  position: relative;
+  overflow: hidden;
+  min-height: 170px;
+  padding-block: 32px;
+
+  // FADE ESQUERDA
+  &::before {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 180px; // Ajuste fino conforme o layout
+    height: 100%;
+    background: linear-gradient(to right, #0d1514 0%, transparent 100%);
+    content: '';
+    pointer-events: none;
+  }
+
+  // FADE DIREITA
+  &::after {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 180px; // Ajuste fino conforme o layout
+    height: 100%;
+    background: linear-gradient(to left, #0d1514 0%, transparent 100%);
+    content: '';
+    pointer-events: none;
+  }
+}
+
+.v2-clients__track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: v2-clients-scroll 30s linear infinite;
+  gap: 120px;
+}
+
+.v2-clients__item {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.v2-clients__logo {
+  width: auto;
+  max-height: 170px;
+  filter: grayscale(1);
+  opacity: 0.9;
+}
+
+/* Pausa quando o usuário passa o mouse (melhor leitura) */
+.v2-clients__carousel:hover .v2-clients__track {
+  animation-play-state: paused;
+}
+
+@keyframes v2-clients-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===========================
+   Parcerias Estratégicas
+   =========================== */
+
+.v2-partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Bloco de texto à esquerda */
+
+.v2-partners__text {
+  max-width: 50%;
+}
+
+.v2-partners__title {
+  margin-bottom: 0.6rem;
+  font-size: 2.5rem;
+}
+
+.v2-partners__body {
+  margin-bottom: 28px;
+  font-size: 20px;
+  line-height: 1.5;
+
+  p {
+    margin: 0 0 16px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.v2-partners__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.8rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-light) !important;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(255, 255, 255, 0.12);
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
+
+.v2-partners__card {
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 30px 67px;
+  border-radius: 48px;
+  background: #ffffff;
+  justify-self: end;
+}
+
+.v2-partners__logos {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.v2-partners__logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v2-partners__logo {
+  width: 100%;
+  max-width: 170px;
+  max-height: 170px;
+}
+
+@media (max-width: 1100px) {
+  .v2-clients {
+    padding-bottom: 60px;
+  }
+
+  .v2-partners {
+    width: 100%;
+    gap: 48px;
+  }
+
+  .v2-partners__card {
+    padding: 40px 40px;
+  }
+
+  .v2-clients__track {
+    gap: 96px;
+  }
+}
+
+@media (max-width: 980px) {
+  .v2-partners {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .v2-partners__text {
+    max-width: 100%;
+  }
+
+  .v2-partners__card {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+
+  .v2-partners__logos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .v2-partners {
+    padding-bottom: 0px;
+  }
+}
