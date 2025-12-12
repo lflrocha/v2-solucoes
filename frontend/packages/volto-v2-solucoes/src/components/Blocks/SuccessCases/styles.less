@@ -9,6 +9,18 @@
   color: var(--text-light);
 }
 
+.v2-success-cases::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 36%;
+  height: 90%;
+  border-radius: 350px 0 0 0;
+  background-color: #162120;
+}
+
 /* Container da imagem com shade da esquerda */
 .v2-success-cases__image {
   position: absolute;
@@ -188,6 +200,10 @@
 }
 
 @media (max-width: 768px) {
+  .v2-success-cases::after {
+    display: none;
+  }
+
   .v2-success-cases__content {
     padding-top: 60px;
     padding-bottom: 60px;
