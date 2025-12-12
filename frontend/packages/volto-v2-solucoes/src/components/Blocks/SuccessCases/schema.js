@@ -41,7 +41,7 @@ const SuccessCasesSchema = (intl) => ({
         id: 'image',
         defaultMessage: 'Imagem de fundo',
       }),
-      widget: 'object_browser',
+      widget: 'image',
       mode: 'image',
     },
     seeAllLabel: {

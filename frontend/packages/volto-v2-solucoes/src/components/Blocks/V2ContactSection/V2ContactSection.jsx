@@ -36,7 +36,11 @@ const V2ContactSection = ({
   };
 
   return (
-    <section className="v2-contact" aria-labelledby="v2-contact-title">
+    <section
+      id="contato-v2"
+      className="v2-contact"
+      aria-labelledby="v2-contact-title"
+    >
       <div className="v2-contact__inner conteudo-centralizado">
         {/* COLUNA ESQUERDA */}
         <div className="v2-contact__info">
