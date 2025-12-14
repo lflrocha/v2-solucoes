@@ -1,0 +1,166 @@
+.split-text-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100% !important;
+  padding: 6rem 0;
+  background: var(--background-color);
+  color: var(--text-dark);
+
+  * {
+    font-family: var(--site-font-text);
+  }
+
+  /* ===============================
+      ESTRUTURA
+  =============================== */
+
+  .inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+
+  .content {
+    flex: 1;
+
+    h2 {
+      margin-bottom: 0.6rem;
+      font-size: 2.5rem;
+    }
+
+    .line {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-bottom: 1.6rem;
+      background: linear-gradient(
+        to right,
+        rgba(243, 146, 0, 1) 0%,
+        rgba(249, 249, 249, 0) 100%
+      );
+    }
+
+    .subtitle {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    .description {
+      margin-bottom: 1.8rem;
+      line-height: 1.6;
+
+      p {
+        margin: 0 0 0.8rem 0;
+        font-size: 20px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+
+      em {
+        font-style: italic;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      ul,
+      ol {
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+      }
+    }
+
+    .bullets {
+      padding-left: 0;
+      margin-bottom: 2rem;
+      list-style: none;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        &::before {
+          color: #ff9d00;
+          content: '• ';
+        }
+      }
+    }
+  }
+
+  /* ===============================
+      BACKGROUND DECORATIVO
+  =============================== */
+
+  .bg-shape {
+    position: absolute;
+    z-index: 1;
+    top: -8%;
+    left: -5%;
+    width: 40%;
+    height: 65%;
+    background: #f2f2f2;
+    border-top-right-radius: 350px;
+    pointer-events: none;
+  }
+
+  /* ===============================
+      VARIAÇÕES DE COLUNA
+  =============================== */
+
+  &.one-column {
+    .inner {
+      justify-content: center;
+    }
+
+    .content {
+      max-width: 900px;
+    }
+  }
+
+  &.two-columns {
+    .inner {
+      justify-content: space-between;
+    }
+  }
+
+  /* ===============================
+      RESPONSIVO
+  =============================== */
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+
+    .inner {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .content {
+      width: 100%;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .bg-shape {
+      top: auto;
+      bottom: -5%;
+      left: -10%;
+      width: 80%;
+      height: 25%;
+      border-top-right-radius: 250px;
+    }
+  }
+}

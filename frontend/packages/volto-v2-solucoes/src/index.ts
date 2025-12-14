@@ -6,6 +6,9 @@ import contactSection from './components/Blocks/V2ContactSection/config';
 import serviceCards from './components/Blocks/ServiceCards/config';
 import successCases from './components/Blocks/SuccessCases/config';
 import clientsPartness from './components/Blocks/ClientsPartners/config';
+import applyHeroInterno from './components/Blocks/HeroInterno/config';
+import splitTextSection from './components/Blocks/SplitTextSection/config';
+
 import './theme/extras.css';
 
 function applyConfig(config: ConfigType) {
@@ -19,6 +22,8 @@ function applyConfig(config: ConfigType) {
   serviceCards(config);
   successCases(config);
   clientsPartness(config);
+  applyHeroInterno(config);
+  splitTextSection(config);
 
   return config;
 }
