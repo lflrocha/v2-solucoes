@@ -28,7 +28,7 @@ const HeroInternoView = ({ data = {} }) => {
 
   return (
     <section
-      className="v2-hero"
+      className="v2-hero interno"
       aria-labelledby={title ? 'hero-heading' : undefined}
       style={{
         ...(imageUrl ? { backgroundImage: `url(${imageUrl})` } : {}),

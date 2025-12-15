@@ -1,13 +1,12 @@
-/* stylelint-disable order/properties-order */
-
 /* ------------------ LOGO ------------------ */
 .v2-logo {
   display: flex;
+  width: 100%;
+  max-width: 396px;
 }
 
 .v2-logo img {
   width: 100%;
-  max-width: 396px;
   height: auto;
   object-fit: cover;
   transition: height 0.2s ease;
@@ -38,17 +37,25 @@
   align-items: center;
 }
 
+/* Wrapper para itens com dropdown (Quem Somos / Soluções) */
+.v2-link-dropdown {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
 /* Separadores verticais entre links */
 .v2-menu-main .v2-link {
   position: relative;
-  font-family: var(--site-font-text);
-  font-weight: 700;
   padding: 0px 20px;
   border-left: 1px solid rgba(233, 233, 233, 0.15);
+  font-family: var(--site-font-text);
+  font-weight: 700;
   white-space: nowrap;
 }
 
-.v2-menu-more .v2-link {
+.v2-menu-more .v2-link,
+.v2-link.v2-dropdown-link {
   padding: 10px 20px;
 }
 
@@ -74,16 +81,23 @@
   display: inline-block;
 }
 
+/* quando tem dropdown, alinhar texto + seta */
+.v2-link .content-link.has-dropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .v2-link .content-link::after {
-  content: '';
   position: absolute;
-  left: 0;
   top: 120%;
+  left: 0;
   width: 100%;
   height: 2px;
   background-color: var(--text-light);
-  transform-origin: left center;
+  content: '';
   transform: scaleX(0);
+  transform-origin: left center;
   transition:
     transform 0.25s ease,
     background-color 0.25s ease;
@@ -118,16 +132,16 @@
 .v2-more-button {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  padding: 0 16px;
   border: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
   background: none;
   color: var(--text-light);
   cursor: pointer;
+  font-family: var(--site-font-text);
   font-size: 16px;
   font-weight: 500;
-  padding: 0 16px;
-  font-family: var(--site-font-text);
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  gap: 6px;
 }
 
 .v2-more-button:hover {
@@ -140,7 +154,8 @@
 }
 
 /* gira a seta quando aberto */
-.v2-more-button[aria-expanded='true'] .v2-more-arrow {
+.v2-more-button[aria-expanded='true'] .v2-more-arrow,
+.v2-more-arrow.is-open {
   transform: rotate(180deg);
 }
 
@@ -153,40 +168,42 @@
   stroke: var(--primary);
 }
 
-/* dropdown “Mais” com animação suave */
+/* ------------------ DROPDOWNS (TAMANHO PADRÃO) ------------------ */
 .v2-more-menu {
   position: absolute;
   z-index: 1000;
   top: 100%;
   right: 0;
-  min-width: 200px;
-  margin-top: 16px;
+  overflow: hidden;
+  width: 200px; /* ✅ garante alinhamento */
   padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 4px;
+  margin-top: 16px;
   background: var(--header-background-color);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
   list-style: none;
 
   opacity: 0;
-  transform: translateY(4px);
-  visibility: hidden;
   pointer-events: none;
+  transform: translateY(4px);
   transition:
     opacity 0.18s ease,
     transform 0.18s ease,
     visibility 0.18s ease;
+  visibility: hidden;
 }
 
 /* estado aberto – entra/saí suave */
 .v2-more-menu.is-open {
   opacity: 1;
+  pointer-events: auto;
   transform: translateY(0);
   visibility: visible;
-  pointer-events: auto;
 }
 
 .v2-more-menu li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .v2-more-menu li:last-child {
@@ -197,7 +214,85 @@
   display: block;
   padding: 10px 20px;
   border-right: none !important;
+  border-left: none !important;
   font-size: 16px;
+}
+
+.v2-more-menu li a,
+.v2-more-accordion-panel a,
+.v2-dropdown-link {
+  hyphens: auto;
+  line-height: 1.3;
+  overflow-wrap: anywhere; /* quebra mesmo em textos longos */
+  white-space: normal !important;
+  word-break: break-word; /* fallback */
+}
+
+/* (opcional) dar uma “respiro” vertical quando quebrar */
+.v2-more-menu li a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* ------------------ DROPDOWN PRINCIPAIS (Quem somos / Soluções)
+   Reutiliza o mesmo estilo do .v2-more-menu
+---------------------------------------- */
+.v2-dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+.v2-dropdown-link {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ------------------ MAIS: ACCORDION INTERNO ------------------ */
+.v2-more-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.v2-more-accordion-trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 0;
+  background: none;
+  color: var(--text-light);
+  cursor: pointer;
+  font-family: var(--site-font-text);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.v2-more-accordion-trigger:hover {
+  color: var(--primary);
+}
+
+.v2-more-accordion-panel {
+  overflow: hidden;
+  max-height: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  transition: max-height 0.3s ease;
+}
+
+.v2-more-accordion-panel.is-open {
+  max-height: 420px;
+}
+
+.v2-more-accordion-panel a {
+  padding: 10px 20px 10px 32px;
+  font-size: 15px;
+  opacity: 0.92;
+}
+
+.v2-more-parentlink {
+  font-weight: 600;
+  opacity: 1;
 }
 
 /* ------------------ ACTION BUTTONS ------------------ */
@@ -210,14 +305,14 @@
   display: inline-flex;
   align-items: center;
   padding: 0 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
   color: var(--text-light);
   font-family: var(--site-font-text);
   font-size: 16px;
   font-weight: 700;
   gap: 4px;
   text-decoration: none;
-  backdrop-filter: blur(4px);
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .btn-v2-link:first-child {
@@ -273,16 +368,16 @@
 
 /* ------------------ HAMBURGUER ------------------ */
 .v2-burger {
+  z-index: 999;
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 0 20px;
   border: 0;
   background: none;
   cursor: pointer;
   gap: 6px;
-  padding: 0 20px;
-  z-index: 999;
 }
 
 .v2-burger span {
@@ -311,19 +406,19 @@
 /* ------------------ MOBILE MENU (drawer) ------------------ */
 .v2-mobile-menu {
   position: fixed;
-  inset: 0;
   z-index: 850;
-  pointer-events: none;
+  inset: 0;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.25s ease;
 }
 
 /* overlay escuro de fundo */
 .v2-mobile-menu::before {
-  content: '';
   position: absolute;
-  inset: 0;
   background: rgba(0, 0, 0, 0.55);
+  content: '';
+  inset: 0;
 }
 
 /* painel lateral (estilo drawer moderno) */
@@ -331,13 +426,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
-  width: min(320px, 80vw);
-  background: var(--header-background-color);
-  padding: 96px 24px 24px;
-  box-shadow: -12px 0 30px rgba(0, 0, 0, 0.55);
   display: flex;
+  width: min(320px, 80vw);
+  height: 100%;
   flex-direction: column;
+  padding: 96px 24px 24px;
+  background: var(--header-background-color);
+  box-shadow: -12px 0 30px rgba(0, 0, 0, 0.55);
   gap: 16px;
 
   transform: translateX(100%);
@@ -346,8 +441,8 @@
 
 /* estado aberto */
 .v2-mobile-menu.is-open {
-  pointer-events: auto;
   opacity: 1;
+  pointer-events: auto;
 }
 
 .v2-mobile-menu.is-open nav {
@@ -357,12 +452,12 @@
 /* links dentro do drawer */
 .v2-mobile-link,
 .v2-mobile-link:visited {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--text-light);
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .v2-mobile-link:last-child {
@@ -373,12 +468,53 @@
   color: var(--primary);
 }
 
+/* ------------------ MOBILE ACCORDION ------------------ */
+.v2-mobile-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.v2-mobile-accordion-trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.v2-mobile-submenu {
+  overflow: hidden;
+  max-height: 0;
+  padding-left: 16px;
+  transition: max-height 0.3s ease;
+}
+
+.v2-mobile-submenu.is-open {
+  max-height: 500px;
+}
+
+.v2-mobile-sublink {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.v2-mobile-parentlink {
+  font-weight: 600;
+  opacity: 1;
+}
+
 /* ------------------ FOCUS VISÍVEL (ACESSIBILIDADE) ------------------ */
 .v2-link:focus-visible,
 .btn-v2-link:focus-visible,
 .v2-more-button:focus-visible,
 .v2-mobile-link:focus-visible,
-.v2-burger:focus-visible {
+.v2-burger:focus-visible,
+.v2-more-accordion-trigger:focus-visible,
+.v2-mobile-accordion-trigger:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 4px;
 }
@@ -397,4 +533,79 @@
   .v2-menu-main .v2-link::before {
     content: none !important;
   }
+}
+
+/* o drawer no print parece mais “compacto”: remove gap grande do nav */
+.v2-mobile-menu nav {
+  gap: 0; /* sobrescreve o gap: 16px */
+}
+
+/* itens principais: separador e espaçamento mais “de lista” */
+.v2-mobile-link,
+.v2-mobile-link:visited {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* “Início” ativo destacado (como no print) */
+.v2-mobile-link.active {
+  position: relative;
+  color: var(--primary);
+}
+
+.v2-mobile-link.active::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 48px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.35);
+  content: '';
+}
+
+/* accordion trigger não deve “pular” visualmente */
+.v2-mobile-accordion-trigger {
+  padding: 18px 0; /* igual ao link */
+}
+
+/* subitens: indent + marcador “|” (como no print) */
+.v2-mobile-submenu {
+  padding-bottom: 10px;
+  padding-left: 0; /* tira o padding antigo */
+  margin-top: 4px;
+}
+
+.v2-mobile-sublink {
+  position: relative;
+  padding: 12px 0 12px 18px;
+  border-bottom: 0;
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* marcador vertical */
+.v2-mobile-sublink::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '|';
+  opacity: 0.55;
+  transform: translateY(-50%);
+}
+
+/* subitem ativo */
+.v2-mobile-sublink.active {
+  color: var(--primary);
+}
+
+/* setinhas no mobile: manter sua classe e cor do stroke no hover/active */
+.v2-mobile-accordion-trigger .content-btn-icon path {
+  stroke: var(--text-light);
+}
+
+.v2-mobile-accordion-trigger:hover .content-btn-icon path {
+  stroke: var(--primary);
 }
