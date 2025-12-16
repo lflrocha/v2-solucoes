@@ -10,6 +10,7 @@ import applyHeroInterno from './components/Blocks/HeroInterno/config';
 import splitTextSection from './components/Blocks/SplitTextSection/config';
 
 import './theme/extras.css';
+import './theme/login.css';
 
 function applyConfig(config: ConfigType) {
   // suas configs de idioma etc.
