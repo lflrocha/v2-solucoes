@@ -55,7 +55,7 @@ services:
       args:
         - VOLTO_VERSION=${VOLTO_VERSION}
     environment:
-      RAZZLE_INTERNAL_API_PATH: http://backend:8080/Plone
+      RAZZLE_INTERNAL_API_PATH: http://backend:9080/Plone
     depends_on:
       - backend
     labels:
@@ -76,6 +76,8 @@ services:
       - traefik.http.routers.rt-frontend-internal.service=svc-frontend
 
   backend:
+    ports:
+      - "8090:8080"
     build:
       context: ./backend
       args:
@@ -88,7 +90,7 @@ services:
       - traefik.enable=true
       - traefik.constraint-label=public
       # Services
-      - traefik.http.services.svc-backend.loadbalancer.server.port=8080
+      - traefik.http.services.svc-backend.loadbalancer.server.port=9080
 
       # Middlewares
       ## VHM rewrite /++api++/

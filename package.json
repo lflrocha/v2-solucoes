@@ -1,0 +1,10 @@
+{
+	"dependencies": {
+		"@kitconcept/volto-button-block": "^4.0.0",
+		"@kitconcept/volto-light-theme": "^7.6.5",
+		"@kitconcept/volto-separator-block": "^4.2.1",
+		"@kitconcept/volto-slider-block": "^6.4.1",
+		"@plone-collective/volto-authomatic": "^2.0.4",
+		"volto-form-block": "^3.15.0"
+	}
+}

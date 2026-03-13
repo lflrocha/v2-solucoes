@@ -28,27 +28,9 @@
     "lint:fix": "stylelint 'packages/**/src/**/*.{css,scss,less}' --fix && prettier --write 'packages/**/src/**/*.{js,jsx,ts,tsx,css,scss,less}'"
   },
   "addons": [
-    "@eeacms/volto-accordion-block",
-    "@kitconcept/volto-slider-block",
-    "@kitconcept/volto-social-blocks",
-    "@kitconcept/volto-separator-block",
-    "@mbarde/volto-image-crop-widget",
-    "volto-form-block",
-    "@kitconcept/volto-button-block",
-    "@plone-collective/volto-authomatic",
-    "@eeacms/volto-timeline-block",
-    "@kitconcept/volto-light-theme"
   ],
   "theme": "",
   "dependencies": {
-    "@plone/components": "^3.0.2",
-    "@plone/registry": "^3.0.0-alpha.8",
-    "@plone-collective/volto-authomatic": "3.0.0-alpha.4",
-    "@kitconcept/volto-social-blocks": "1.0.0-alpha.8",
-    "@mbarde/volto-image-crop-widget": "0.5.1",
-    "@kitconcept/volto-light-theme": "7.0.0-alpha.25",
-    "@eeacms/volto-timeline-block": "*",
-    "volto-form-block": "*"
   },
   "peerDependencies": {
     "react": "^18.2.0",
