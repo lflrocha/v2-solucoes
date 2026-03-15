@@ -76,6 +76,17 @@ body {
   padding-bottom: 0 !important;
 }
 
+div#page-document {
+  width: 100% !important;
+}
+.ui.basic.segment.content-area {
+    margin: 0;
+    padding: 0;
+}
+.ui.secondary.vertical.segment.breadcrumbs {
+  display: none;
+}
+
 /* Wrapper central com largura máxima */
 .conteudo-centralizado {
   z-index: 2;
