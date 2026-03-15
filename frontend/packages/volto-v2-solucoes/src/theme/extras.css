@@ -80,8 +80,8 @@ div#page-document {
   width: 100% !important;
 }
 .ui.basic.segment.content-area {
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
 }
 .ui.secondary.vertical.segment.breadcrumbs {
   display: none;
